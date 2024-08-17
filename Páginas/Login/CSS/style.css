@@ -1,0 +1,43 @@
+@import url(../../default.css);
+
+body {
+    margin: 0px;
+}
+
+nav {
+    text-align: center;
+    display:flex;
+}
+
+.navbar {
+    display: flex;
+    
+    justify-content: center;
+}
+
+.section-selected {
+    background-color: var(--cor-verde-header);
+    width: 20%;
+    margin-left:3%;
+    margin-right:3%;
+    padding: 1% 0 1% 0;
+
+}
+
+.section {
+    background-color: var(--cor-verde-acizentado);
+    width: 20%;
+    margin-left:3%;
+    margin-right:3%;
+    padding: 1% 0 1% 0;
+    transition: 0.6s;
+}
+
+.section:hover {
+    background-color: var(--cor-verde-destaque);
+    width: 20%;
+    margin-left:3%;
+    margin-right:3%;
+    padding: 1% 0 1% 0;
+    transition: 0.6s;
+}
