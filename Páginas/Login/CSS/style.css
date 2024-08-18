@@ -1,7 +1,10 @@
-@import url(../../default.css);
+@import url(../../defaultconfig.css);
 
 body {
     margin: 0px;
+    flex-direction: column;
+    min-height: 100vh;
+    display:flex;
 }
 
 nav {
@@ -39,5 +42,32 @@ nav {
     margin-left:3%;
     margin-right:3%;
     padding: 1% 0 1% 0;
-    transition: 0.6s;
+    transition: 0.5s;
+}
+
+
+footer {
+    background-color:var(--cor-verde-header);
+    height:auto;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: auto;
+}
+
+
+.footer-section{
+    display:inline-table;
+    padding: min(1vw, 3vw);
+    
+}
+
+.footer-section h3{
+    margin:0px;
+    background-color:var(--cor-verde-acizentado);
+    border-radius: 10px;
+    padding: min(2vh, 10vh) 10vw;
+    transition: 0.5s;
+}
+
+.footer-section h3:hover{
+    background-color:var(--cor-verde-destaque);
 }

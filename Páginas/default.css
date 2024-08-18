@@ -1,24 +1,4 @@
-:root{
-    /*Usado em Header e locais de exposição*/
-    --cor-verde-header: #017E01;
-    /*Usado para locais desmarcados*/
-    --cor-verde-acizentado: #739570;
-    /* Cor Branco padrão */
-    --cor-branco-padrão: #ECF3EC;
-    /* Cor verde destaques */
-    --cor-verde-destaque: #2F9E41;
-}
 
-
-* {/* Todos as coisas estão com borda em baixo, e com a fonte Open sans, como deve ser */
-    border-radius: 0 0 10px 10px;
-    font-family: "Open Sans", sans-serif;
-    color: var(--cor-branco-padrão);
-}
-
-a{
-    text-decoration: none;
-}
 
 header{ /*Todo header é igual.*/
     background-color: var(--cor-verde-header);
@@ -32,12 +12,10 @@ table {
 }
 
 .if-logo {
-    display:flex;
-    width: 37px;
-    height: 48px;
-    justify-self: left;
-
+    width: max(3%, 2%);
+    position:absolute;
 }
+
 
 .header-sigaa {
     margin:0;
