@@ -4,7 +4,6 @@ body {
     margin: 0px;
     flex-direction: column;
     min-height: 100vh;
-    display:flex;
 }
 
 nav {
@@ -50,13 +49,18 @@ footer {
     background-color:var(--cor-verde-header);
     height:auto;
     border-radius: 10px 10px 0px 0px;
-    margin-top: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    display:flex;
 }
 
 
 .footer-section{
-    display:inline-table;
-    padding: min(1vw, 3vw);
+    display:inline-block;
+    padding: 1vw 3vh;
     
 }
 
