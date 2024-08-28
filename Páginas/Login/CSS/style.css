@@ -85,8 +85,47 @@ footer {
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
-    height: 50vh;
+    height:40vh;
     width: 30vw;
     background-color: var(--cor-verde-acizentado);
     border-radius: 10px;
+}
+
+#login {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    align-items:center;
+    display:flex;
+    flex-direction: column;
+    top:5vh;
+    
+}
+
+.forms {
+    color:black;
+}
+
+.form-size{
+    position: relative;
+    padding: 1vh 8vw;
+    border-radius: 10px;
+    border:0px;
+    
+}
+
+#entrar {
+    position: relative;
+    padding: 1vh 12vw;
+    border-radius: 10px;
+    border:0px;
+    background-color: var(--cor-verde-destaque);
+    cursor:pointer;
+}
+
+#ncadastro {
+    background-color: transparent;
+    border: 0px transparent;
+    cursor: pointer;
+    font-size: 16px;
 }

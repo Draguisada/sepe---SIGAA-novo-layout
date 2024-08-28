@@ -11,9 +11,10 @@ table {
     width: 100%;
 }
 
-.if-logo {
+#if-logo {
     width: 2vw;
-    position:relative;
+    position:absolute;
+    left:1vw;
 }
 
 
