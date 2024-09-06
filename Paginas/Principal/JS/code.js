@@ -10,8 +10,11 @@ function colorizeNotas() {
         else if (notaValue >= 6 && notaValue < 7) {
             element.style.backgroundColor = '#e9d20a';
         }
-        else if (notaValue >= 7) {
+        else if (notaValue >= 7 && notaValue < 10) {
             element.style.backgroundColor = '#2f9e41';
+        }
+        else if (notaValue == 10) {
+            element.style.backgroundColor = '#F1A532'
         }
     });
 }

@@ -1,30 +1,42 @@
+@import url(../../padrao.css);
+
 /*CARDS*/
 .nota-card {
-    background-color: #d9d9d9;
-    width: 600px;
-    height: 300px;
-    border-radius: 25px;
-    overflow: hidden;
+    font-size: 1rem;
+    background-color: var(--cor-cinza-padrao);
+    width: 16vw;
+    height: 13vh;
+    border-radius: 10px;
+    overflow: auto;
 }
 .nota-titulo {
-    background-color: #2f9e41;
+    background-color: var(--cor-verde-destaque);
     text-align: center;
-    color: white;
+    color: var(--cor-branco-padrao);
+    border-radius: 0px 10px 0px 0px;
 }
 .nota-titulo-materia {
     font-weight: bold;
 }
 .nota-conteudo-local {
-    color: white;
+    color: var(--cor-branco-padrao);
+    padding: 0 2rem;
 }
 .nota-conteudo-nota-texto {
-    color: #2f9e41;
+    color: var(--cor-verde-destaque);
 }
 .nota-conteudo-nota-valor {
-    color: white;
-    border-radius: 8px;
-    background-color: gray;
+    color: var(--cor-branco-padrao);
+    border-radius: 10px;
+    background-color: var(--cor-cinza-padrao);
     display: inline-block;
     padding: 1px 3px;
+}
+.nota-conteudo {
+    font-weight: bold;
+    display:inline-flex;
+    justify-self: center;
+    text-align: center;
+    padding: 2vh 0;
 }
 /*CARDS END*/
