@@ -1,0 +1,16 @@
+# Padronizações:
+
+Sempre importar o CSS default.css nos .html
+Sempre importar o CSS padrao.css nos .css
+
+# Sobre Texto:
+    Fonte do texto: Open Sans
+    Tamanho de fonte padrão: 16px
+    Tamanho de fonta para títulos: 20px
+    Se o texto for um link: Sublinhado
+
+    Cor do texto padrão: Branco var(--cor-branco-padrao)
+    Cor do texto não editavel pelo usuário 'preto' var(--cor-preto-padrao)
+
+#Layout:
+    Bordas: 10px

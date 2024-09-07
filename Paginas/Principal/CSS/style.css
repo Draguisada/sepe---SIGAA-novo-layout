@@ -4,10 +4,11 @@
 .nota-card {
     font-size: 1rem;
     background-color: var(--cor-cinza-padrao);
-    width: 16vw;
-    height: 13vh;
+    width: 15vw;
+    height: 8rem;
     border-radius: 10px;
-    overflow: auto;
+    overflow: none;
+    
 }
 .nota-titulo {
     background-color: var(--cor-verde-destaque);
@@ -20,7 +21,6 @@
 }
 .nota-conteudo-local {
     color: var(--cor-branco-padrao);
-    padding: 0 2rem;
 }
 .nota-conteudo-nota-texto {
     color: var(--cor-verde-destaque);
@@ -37,6 +37,113 @@
     display:inline-flex;
     justify-self: center;
     text-align: center;
-    padding: 2vh 0;
+    padding: 01em 0.5em;
+    
 }
 /*CARDS END*/
+
+/* Perfil estudante */
+/* Segmentos Perfil estudante */
+.segmentos-perfil-estudante {
+    display:inline-flex;
+}
+
+/* Ai meu deus o css é muito estranho, no 3° segmneto q só tem link é tudo estranho usando inline-flex, por isso vai virar block */
+
+.segmentos-perfil-estudante:nth-of-type(3) {
+    display:block;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Segmentos Perfil Fim */
+
+.perfil-estudante {
+    background-color: var(--cor-cinza-padrao);
+    position: absolute;
+    right: 1%;
+    display:flex;
+    flex-direction: column;
+    padding: 1vw;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dados-institucionais-aluno-dados {
+    background-color: var(--cor-verde-destaque);
+    list-style-type: none;
+    width: fit-content;
+    padding: 1rem;
+    border-radius:10px;
+}   
+
+.dados-institucionais-aluno-imagem {
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    position: relative;
+    border-radius: 10px;
+}
+
+.imagem-aluno {
+    height: 7em;
+    border-radius:10px;
+}
+
+/* Hover effect para editar imagem */
+
+.editar-imagem {
+    position: absolute;
+    display:none;
+}
+
+.imagem-aluno:hover{
+    filter: saturate(50%)
+    opacity(50%);
+    cursor:pointer;
+}
+
+.imagem-aluno:hover + .editar-imagem {
+    display:block;
+    pointer-events: none;
+}
+
+/* Hover effect fim */
+
+
+
+/* Agenda aluno */
+
+.agenda-aluno {
+    display:inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--cor-preto-padrao);
+    font-weight:600;
+}
+
+#coluna-1 {
+    display:flex;
+    gap:3vw;
+    padding: 0px 1vw;
+}
+
+#coluna-2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:3vw;
+}
+
+/* Segmento 3*/
+
+.links-uteis {
+    color:var(--cor-verde-destaque);
+    font-weight: 600;
+}
+
+/* Perfil estudante Fim */

@@ -9,15 +9,21 @@
     --cor-verde-destaque: #2F9E41;
     /* Cor Cinza padrão */
     --cor-cinza-padrao: #D9D9D9;
+    /* Cor Preta texto não-editavel por aluno */
+    --cor-preto-padrao: #444444;
 }
 
 
 * {/* Todos as coisas estão com borda em baixo, e com a fonte Open sans, como deve ser */
-    border-radius: 0 0 10px 10px;
     font-family: "Open Sans", sans-serif;
+    
+}
+
+body {
     color: var(--cor-branco-padrao);
+    border-radius: 0 0 10px 10px;
 }
 
 a{
-    text-decoration: none;
+    text-decoration: underline;
 }

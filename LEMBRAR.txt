@@ -1,9 +1,0 @@
-# Padronizações:
-# Sobre Texto:
-    Fonte do texto: Open Sans
-    Tamanho de fonte padrão: 16px
-    Tamanho de fonta para títulos: 20px
-    Se o texto for um link: Sublinhado
-
-#Layout:
-    Bordas: 10px
