@@ -14,7 +14,7 @@ function colorizeNotas() {
             element.style.backgroundColor = '#2f9e41';
         }
         else if (notaValue == 10) {
-            element.style.backgroundColor = '#F1A532'
+            element.style.backgroundColor = '#2f9e41'
         }
     });
 }

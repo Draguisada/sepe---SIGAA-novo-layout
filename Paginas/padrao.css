@@ -27,3 +27,6 @@ body {
 a{
     text-decoration: underline;
 }
+.text-centered {
+    text-align: center;
+}

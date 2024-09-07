@@ -12,7 +12,6 @@
 }
 .nota-titulo {
     background-color: var(--cor-verde-destaque);
-    text-align: center;
     color: var(--cor-branco-padrao);
     border-radius: 0px 10px 0px 0px;
 }
@@ -36,7 +35,6 @@
     font-weight: bold;
     display:inline-flex;
     justify-self: center;
-    text-align: center;
     padding: 01em 0.5em;
     
 }
@@ -120,7 +118,6 @@
     display:inline;
     justify-content: center;
     align-items: center;
-    text-align: center;
     color: var(--cor-preto-padrao);
     font-weight:600;
 }
