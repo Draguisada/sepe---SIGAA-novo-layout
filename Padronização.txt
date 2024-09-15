@@ -5,8 +5,8 @@ Sempre importar o CSS padrao.css nos .css
 
 # Sobre Texto:
     Fonte do texto: Open Sans
-    Tamanho de fonte padrão: 16px
-    Tamanho de fonta para títulos: 20px
+    Tamanho de fonte padrão: 12px 0.75rem
+    Tamanho de fonta para títulos: 16px 1 rem
     Se o texto for um link: Sublinhado
 
     Cor do texto padrão: Branco var(--cor-branco-padrao)

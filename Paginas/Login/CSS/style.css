@@ -5,6 +5,11 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: underline;
+    color: vaR(--cor-branco-padrao);
+}
+
 nav{
     height:auto;
     border-radius: 10px 10px 0px 0px;
@@ -13,7 +18,7 @@ nav{
     display:flex;
     text-align: center;
 }
-.section-selected {
+.section.selected {
     background-color: var(--cor-verde-header);
     width: 20%;
     margin-left:3%;
@@ -25,11 +30,11 @@ nav{
 .section {
     background-color: var(--cor-verde-acizentado);
     transition: 0.6s;
-
     width: 20%;
     margin-left:3%;
     margin-right:3%;
     padding: 0.5% 0 0.5% 0;
+    border-radius: 0 0 10px 10px;
     
 }
 
@@ -70,7 +75,7 @@ footer {
     background-color:var(--cor-verde-destaque);
 }
 
-.hidden::before {
+.hidden {
     display:none;
 }
 

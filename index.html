@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="Paginas/default.css">
     <link rel="stylesheet" href="Paginas/Login/CSS/style.css">
     <title>SIGAA - Login</title>
-
 </head>
 <body>
     <header>
@@ -24,10 +23,10 @@
     </header>
 
     <nav>
-        <div class="section-selected"><strong>SIGAA</strong> <br> <u>Acadêmico</u></div>
-        <div class="section"><a href="#"><strong>SIPAC</strong> <br> <u>Administrativo</u></a></div>
-        <div class="section"><strong>SIGRH</strong> <br> <u>Recursos Humanos</u></div>
-        <div class="section"><strong>SIGAdmin</strong> <br> <u>Administração e Comunicação</u></div>
+        <div onclick='selectSection(this)' class="section selected"><strong>SIGAA</strong> <br> <u>Acadêmico</u></div>
+        <div onclick='selectSection(this)' class="section"><a href="#"><strong>SIPAC</strong> <br> <u>Administrativo</u></a></div>
+        <div onclick='selectSection(this)' class="section"><a href="#"><strong>SIGRH</strong> <br> <u>Recursos Humanos</u></a></div>
+        <div onclick='selectSection(this)' class="section"><a href="#"><strong>SIGAdmin</strong> <br> <u>Administração e Comunicação</u></a></div>
     </nav>
 
 
@@ -45,17 +44,18 @@
                 <button type="button" id="entrar" class="form-size"><a href="Paginas/Principal/principal.html">Entrar</a></button>
                 <br><br>
                 <a href="#" style="color:black">Esqueceu a senha?</a> <br>
-                <button type="button" id="ncadastro"><strong style="color:black">Não possui cadastro no SIGAA?</strong></button>
+                <button type="button" id="ncadastro" onclick="naoPossuiCadastro()"><strong style="color:black">Não possui cadastro no SIGAA?</strong></button>
             </form>
 
         </div>
     </section>
 
 
-    <footer class="hidden">
+    <footer class="hidden cadastro">
         <div class="footer-section"><a href="#"><h3>Servidor</h2></a></div>
         <div class="footer-section"><a href="#"><h3>Aluno</h2></a></div>
         <div class="footer-section"><a href="#"><h3>Familiares</h2></a></div>
     </footer>
 </body>
+<script src="Paginas/Login/JS/code.js"></script>
 </html>
