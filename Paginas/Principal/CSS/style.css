@@ -1,11 +1,11 @@
 @import url(../../padrao.css);
 
-/*CARDS*/
+/* card pequeno */
 .nota-card {
-    font-size: 1rem;
+    font-size: var(--titulo-text);
     background-color: var(--cor-cinza-padrao);
-    width: 15vw;
-    height: 8rem;
+    width: 17.3em;
+    height: 8em;
     border-radius: 10px;
     overflow: none;
     
@@ -13,8 +13,17 @@
 .nota-titulo {
     background-color: var(--cor-verde-destaque);
     color: var(--cor-branco-padrao);
-    border-radius: 0px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    padding: var(--xs-size);
 }
+
+.nota-titulo-professor {
+    background-color: var(--cor-verde-destaque);
+    color: var(--cor-branco-padrao);
+    border-radius: 0px 10px 0px 0px;
+    font-size:var(--normal-text);
+}
+
 .nota-titulo-materia {
     font-weight: bold;
 }
@@ -26,19 +35,19 @@
 }
 .nota-conteudo-nota-valor {
     color: var(--cor-branco-padrao);
-    border-radius: 10px;
-    background-color: var(--cor-cinza-padrao);
+    border-radius: var(--xxs-size);
     display: inline-block;
-    padding: 1px 3px;
+    padding: 0.2rem 0.2rem;
 }
 .nota-conteudo {
     font-weight: bold;
     display:inline-flex;
     justify-self: center;
     padding: 01em 0.5em;
-    
+    gap: var(--l-size);   
 }
-/*CARDS END*/
+/* card pequeno fim */
+
 
 /* Perfil estudante */
 /* Segmentos Perfil estudante */
@@ -62,10 +71,11 @@
     right: 1%;
     display:flex;
     flex-direction: column;
-    padding: 1vw;
+    padding: var(--s-size);
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    font-size: var(--titulo-text);
 }
 
 
@@ -86,7 +96,7 @@
 }
 
 .imagem-aluno {
-    height: 7em;
+    height: 7rem;
     border-radius:10px;
 }
 
@@ -122,9 +132,15 @@
     /* font-weight:600; */
 }
 
+.agenda-aluno img {
+    width:var(--xl-size);
+    height: auto;
+}
+
+
 #coluna-1 {
     display:flex;
-    gap:3vw;
+    gap:var(--l-size);
     padding: 0px 1vw;
 }
 
@@ -133,7 +149,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap:3vw;
+    gap:var(--l-size);
 }
 
 /* Segmento 3*/

@@ -1,4 +1,5 @@
 :root{
+    /* Cores Inicio */
     /*Usado em Header e locais de exposição*/
     --cor-verde-header: #017E01;
     /*Usado para locais desmarcados*/
@@ -11,6 +12,28 @@
     --cor-cinza-padrao: #D9D9D9;
     /* Cor Preta texto não-editavel por aluno */
     --cor-preto-padrao: #444444;
+
+    /* Cores Final */
+    font-size: 16px;
+
+    /* Textos */
+    --titulo-text: 16px;
+    --normal-text: 12px;
+
+    /* Tamanho Inicio */
+
+    --xxs-size: 0.25em; /*4px*/
+    --xs-size: 0.50em; /*8px*/
+    --s-size: 0.75em; /*12px*/
+    --m-size: 1em; /*16px*/
+    --xm-size: 1.25em; /*20px*/
+    --xxm-size: 1.50em; /*24px*/
+
+    /* Maior espaçamento */
+    --l-size: 2.5em; /*40px*/
+    --xl-size: 3.75em; /*60px*/
+
+    /* Tamanho Fim */
 }
 
 
