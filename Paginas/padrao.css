@@ -14,11 +14,7 @@
     --cor-preto-padrao: #444444;
 
     /* Cores Final */
-    font-size: 16px;
 
-    /* Textos */
-    --titulo-text: 16px;
-    --normal-text: 12px;
 
     /* Tamanho Inicio */
 
@@ -35,6 +31,20 @@
 
     /* Tamanho Fim */
 }
+
+@media (max-width: 1660px) {
+    :root{
+    font-size: 16px;
+    --titulo-text: 16px;
+    --normal-text: 12px;
+    }}
+
+    @media (max-width: 1280px){
+        :root{
+        font-size: 12px;
+        --titulo-text: 12px;
+        --normal-text: 10px;
+    }}
 
 
 * {/* Todos as coisas estão com borda em baixo, e com a fonte Open sans, como deve ser */

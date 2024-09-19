@@ -69,6 +69,7 @@
     background-color: var(--cor-cinza-padrao);
     position: absolute;
     right: 1%;
+    z-index: 0;
     display:flex;
     flex-direction: column;
     padding: var(--s-size);
@@ -159,3 +160,91 @@
 }
 
 /* Perfil estudante Fim */
+
+
+/* Main Content */
+
+#main-content-menu {
+    margin: var(--xxs-size) var(--xl-size);
+    display:inline-flex;
+    flex-direction: row;
+    gap: 4.5em;
+}
+
+.main-content-menu-item {
+    background-color: var(--cor-verde-header);
+    width: 10em;
+    height: 6em;
+    border-radius: 10px;
+}
+
+.main-content-menu-item-img img{
+    padding: var(--xxs-size);
+    width: var(--xl-size);
+    height: auto;
+    align-self: center;
+    left: 50%;
+}
+
+.main-content-menu-item-desc {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Acabou Main Content */
+
+#main-content-info {
+    display:flex;
+    gap: var(--s-size);
+}
+
+.main-content-info-card {
+    font-size: var(--normal-text);
+    width: 38%;
+    height: 13.3em;
+    background-color: var(--cor-cinza-padrao);
+    position: relative;
+
+}
+
+#main-content-info-news {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-preto-padrao);
+    border-radius: 0px 10px 10px 0px;
+}
+
+#main-content-info-news p{
+    position:relative;
+    height: fit-content;
+
+}
+
+#main-content-info-update {
+    border-radius: 10px;
+}
+
+.info-header {
+    border-radius: 10px 10px 0px  0px;
+    background-color: var(--cor-verde-header);
+    font-weight: bold;
+    padding: var(--xs-size)
+    
+}
+
+.info-content-item {
+    color: var(--cor-preto-padrao);
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--xm-size);
+}
+
+.info-content-item-title {
+    font-weight: bold;
+    font-size: var(--titulo-text);
+}
+
+.info-content-item-desc p{
+    margin: var(--xs-size);
+}
