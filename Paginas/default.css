@@ -2,6 +2,7 @@
 
 header{ /*Todo header é igual.*/
     background-color: var(--cor-verde-header);
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -15,6 +16,7 @@ table {
     width: 2vw;
     position:absolute;
     left:1vw;
+    align-self: center;
 }
 
 
