@@ -1,5 +1,9 @@
 @import url(../../padrao.css);
 
+header {
+    margin-bottom: 2vh;
+}
+
 #main-content {
     float: left;
     width: 75%;
@@ -70,15 +74,15 @@
 .segmentos-perfil-estudante:nth-of-type(3) {
     display:block;
     text-align: center;
-    padding: 1rem 0;
+    padding: var(--m-size) 0;
 }
 
 /* Segmentos Perfil Fim */
 
-.perfil-estudante {
+#perfil-estudante {
     background-color: var(--cor-cinza-padrao);
     right: 1%;
-    z-index: 0;
+    z-index: 1;
     display:flex;
     flex-direction: column;
     padding: var(--s-size);
@@ -86,7 +90,8 @@
     justify-content: center;
     align-items: center;
     font-size: var(--titulo-text);
-    margin: 15px;
+    margin: 0 15px;
+    row-gap: 5vh;
 }
 
 
@@ -177,11 +182,12 @@
 #main-content-menu {
     display: flex;
     justify-content: space-between; /* Equal spacing between items */
-    align-items: center; /* Vertically centers items */
+    align-items: top; /* Vertically centers items */
     flex-wrap: nowrap; /* Prevents wrapping */
     width: 100%; /* Ensures the menu spans full width */
     max-width: 100%; /* Prevents overflow */
-    padding: 20px;
+    padding-bottom: 20px; 
+    padding-left: 20px; 
     box-sizing: border-box;
 }
 
@@ -193,7 +199,7 @@
     flex-grow: 0; /* Prevents items from growing beyond the defined width */
     flex-shrink: 0; /* Prevents items from shrinking */
     flex-basis: calc(100% / 6 - 20px); /* Set equal width for each item (divided by 6 items with margin) */
-    margin: 10px; /* Space around each item */
+    /*margin: 10px; /* Space around each item */
     background-color: var(--cor-verde-header);
     border-radius: 10px;
 }
@@ -221,7 +227,6 @@
     justify-content: space-between; /* ensures spacing between the two columns */
     width: 100%; /* makes sure it occupies the full width of the parent */
     box-sizing: border-box; /* ensures padding/border is included in the width */
-    gap: var(--s-size);
 }
 
 .main-content-info-card {
