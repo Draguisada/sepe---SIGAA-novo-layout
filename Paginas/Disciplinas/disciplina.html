@@ -24,6 +24,36 @@
         </table>
     </header>
     <!-- header fim-->
+     <!-- "Navbar" -->
+    <nav>
+        <div id="nome-materia">
+            <h2 onclick="troca(this)">Biologia</h2>
+        </div>
+
+        <div id="menu-burger-config">
+            <p onclick="selectSection(this)" class="menu-burger">Turma</p>
+            <p onclick="selectSection(this)" class="menu-burger">Atividade</p>
+            <p onclick="selectSection(this)" class="menu-burger">Materias</p>
+            <p onclick="selectSection(this)" class="menu-burger">Aluno</p>
+            <p onclick="selectSection(this)" class="menu-burger">Estatística</p>
+        </div>
+    </nav>
+
+    <div id="andamento-aula">
+        <h3>Andamento das aulas</h3>
+        <p>Aulas Ministradas/Totais: 28/80</p>
+        <div id="slider-percent">
+            <div id="slider-atual">
+                <p>35%</p>
+            </div>
+        </div>
+        <p>% de Carga Horária Ministrada</p>
+        <p>Nota: 7.9 | 8.0</p>
+        <p>Média do trimestre: 8</p>
+        <p>Faltas: 0</p>
+
+    </div>
 
 </body>
+<script src="JS/code.js"></script>
 </html>

@@ -1,2 +1,133 @@
 @import url(../../padrao.css);
 
+:root{
+--azul-slider: #195FC8;
+}
+
+nav {
+    display: flex;
+    width: 80vw;
+}
+
+#nome-materia {
+    display:flex;
+    width: 30%;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+
+    padding:0 1% 0.5%;
+    margin-left: 2vw;
+}
+
+#nome-materia h2 {
+    background-color: var(--cor-verde-header);
+    height: fit-content;
+    border-radius: 0 0 10px 10px;
+    padding: 5% 10% 5%;
+    margin: 0;
+}
+
+#menu-burger-config {
+
+    display: grid;
+
+    column-gap: 0.5vw;
+    justify-items: stretch;
+    align-items: stretch;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+
+}
+
+.menu-burger {
+    background-color: var(--cor-cinza-padrao);
+    border-radius: 10px;
+    margin: var(--m-size) 0;
+
+    height: 6vh;
+
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+
+    color: var(--cor-verde-destaque);
+    font-weight: 600;
+    font-size: var(--titulo-text);
+
+    transition: all 0.2s ease-in-out;
+}
+
+/* Navbar acabou */
+
+#andamento-aula{
+
+    background-color: var(--cor-cinza-padrao);
+    display:grid;
+    margin: 1vh calc(2vw + 0.5%); /* AQUI Ó*/
+    width: 18vw;
+    height: 5%;
+
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+
+    border-radius: 10px;
+    
+}
+
+#andamento-aula h3 {
+    width: 95%;
+    background-color: var(--cor-verde-destaque);
+    margin: 0;
+    padding: var(--m-size) var(--xs-size);
+    border-radius: 10px;
+}
+
+#andamento-aula p {
+    color: var(--cor-preto-padrao);
+    margin-top: var(--m-size);
+    margin-bottom: 0;
+}
+
+#andamento-aula > p + p + p:last-child {
+    margin-bottom: var(--m-size);
+}
+
+#andamento-aula > h3 + p {
+    margin-bottom: var(--xs-size);
+}
+
+/* Slider */
+
+#slider-percent {    
+    width: 80%;
+    height: 3vh;
+    background-color: var(--cor-preto-padrao);
+    border-radius: 10px;
+    
+}
+
+#slider-atual p {
+    margin: 0;
+    color:var(--cor-branco-padrao);
+    font-weight: 600;
+}
+
+#slider-atual {
+    width: 35%;
+    height: 100%;
+    background-color: var(--azul-slider);
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Botoes topo Navbar */
+.selected {
+    background-color: var(--cor-verde-header);
+    color: var(--cor-branco-padrao);
+}
