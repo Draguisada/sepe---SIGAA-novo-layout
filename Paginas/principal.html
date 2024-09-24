@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGAA</title>
-    <link rel="stylesheet" href="../default.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="CSS/principal.css">
 
 
 </head>
 <body>
     <!-- Header default IFC - SIGAA-->
     <header>
-        <img src="../../Icones/IF Logo.png" alt="Logo dos Institutos Federais" id="if-logo">
+        <img src="Imagens/Icones/IF Logo.png" alt="Logo dos Institutos Federais" id="if-logo">
         <table>
             <tr>
                 <th></th>
@@ -31,27 +30,27 @@
 
         <div id="main-content-menu" class="text-centered">
             <div class="main-content-menu-item">
-                <div class="main-content-menu-item-img"><img src="Imagens/placeholder.png" alt=""></div>
+                <div class="main-content-menu-item-img"><img src="Imagens/Icones/placeholder.png" alt=""></div>
                 <div class="main-content-menu-item-desc">Ensino</div>
             </div>
             <div class="main-content-menu-item">
-                <div class="main-content-menu-item-img"><img src="Imagens/placeholder.png" alt=""></div>
+                <div class="main-content-menu-item-img"><img src="Imagens/Icones/placeholder.png" alt=""></div>
                 <div class="main-content-menu-item-desc">Pesquisa</div>
             </div>
             <div class="main-content-menu-item">
-                <div class="main-content-menu-item-img"><img src="Imagens/placeholder.png" alt=""></div>
+                <div class="main-content-menu-item-img"><img src="Imagens/Icones/placeholder.png" alt=""></div>
                 <div class="main-content-menu-item-desc">Extensão</div>
             </div>
             <div class="main-content-menu-item">
-                <div class="main-content-menu-item-img"><img src="Imagens/placeholder.png" alt=""></div>
+                <div class="main-content-menu-item-img"><img src="Imagens/Icones/placeholder.png" alt=""></div>
                 <div class="main-content-menu-item-desc">Ações Associadas</div>
             </div>
             <div class="main-content-menu-item">
-                <div class="main-content-menu-item-img"><img src="Imagens/placeholder.png" alt=""></div>
+                <div class="main-content-menu-item-img"><img src="Imagens/Icones/placeholder.png" alt=""></div>
                 <div class="main-content-menu-item-desc">Bolsas</div>
             </div>
             <div class="main-content-menu-item">
-                <div class="main-content-menu-item-img"><img src="Imagens/placeholder.png" alt=""></div>
+                <div class="main-content-menu-item-img"><img src="Imagens/Icones/placeholder.png" alt=""></div>
                 <div class="main-content-menu-item-desc">Outros</div>
             </div>
         </div>
@@ -115,7 +114,7 @@
         </div>
     </div>
     <aside id="side-menu">
-        <div id="perfil-estudante">
+        <div id="perfil-estudante" onclick="mostrarPerfilAluno()">
             <div class="segmentos-perfil-estudante">
                 <div class="dados-institucionais-aluno">
                     <ul class="dados-institucionais-aluno-dados">
@@ -127,34 +126,34 @@
                     </ul>
                 </div>
                 <div class="dados-institucionais-aluno-imagem">
-                    <img src="Imagens/sem-foto.jpg" alt="Sua imagem" class="imagem-aluno">
-                    <img src="Imagens/Editar-img.png" alt="Você pode mudar está imagem" class="editar-imagem">
+                    <img src="Imagens/Icones/sem-foto.jpg" alt="Sua imagem" class="imagem-aluno">
+                    <img src="Imagens/Icones/Editar-img.png" alt="Você pode mudar está imagem" class="editar-imagem">
                 </div>
             </div>
     
-            <div class="segmentos-perfil-estudante">
+            <div class="segmentos-perfil-estudante esconder-aluno">
                 <div class="agenda-aluno text-centered">
                     <div id="coluna-1">
                         <div>
-                            <img src="Imagens/placeholder.png" alt="">
+                            <img src="Imagens/Icones/placeholder.png" alt="">
                             <p>Fórum <br> de curso</p>
                         </div>
                         <div>
-                            <img src="Imagens/placeholder.png" alt="">
+                            <img src="Imagens/Icones/placeholder.png" alt="">
                             <p>CAPES</p>
                         </div>
                         <div>
-                            <img src="Imagens/placeholder.png" alt="">
+                            <img src="Imagens/Icones/placeholder.png" alt="">
                             <p>Comunidade <br> virtual</p>
                         </div>
                     </div>
                     <div id="coluna-2">
                         <div>
-                            <img src="Imagens/placeholder.png" alt="">
+                            <img src="Imagens/Icones/placeholder.png" alt="">
                             <p>Pergamum</p>
                         </div>
                         <div>
-                            <img src="Imagens/placeholder.png" alt="">
+                            <img src="Imagens/Icones/placeholder.png" alt="">
                             <p>Meu <br> Pergamum</p>
                         </div>
                     </div>
@@ -162,7 +161,7 @@
             </div>
         
     
-            <div class="segmentos-perfil-estudante">
+            <div class="segmentos-perfil-estudante esconder-aluno">
                 <a class="links-uteis" href="#">Calendário acadêmico</a><br><br>
                 <a class="links-uteis" href="#">Organização Didática dos Cursos</a><br><br>
                 <a class="links-uteis" href="#">Calendário do refeitório</a>
@@ -208,5 +207,5 @@
     </aside>
     
 </body>
-<script src="./JS/code.js"></script>
+<script src="JS/principal.js"></script>
 </html>

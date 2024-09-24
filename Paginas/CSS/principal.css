@@ -1,4 +1,4 @@
-@import url(../../padrao.css);
+@import url(padrao.css);
 
 header {
     margin-bottom: 2vh;
@@ -72,7 +72,6 @@ header {
 /* Ai meu deus o css é muito estranho, no 3° segmneto q só tem link é tudo estranho usando inline-flex, por isso vai virar block */
 
 .segmentos-perfil-estudante:nth-of-type(3) {
-    display:block;
     text-align: center;
     padding: var(--m-size) 0;
 }
@@ -80,7 +79,7 @@ header {
 /* Segmentos Perfil Fim */
 
 #perfil-estudante {
-    background-color: var(--cor-cinza-padrao);
+    
     right: 1%;
     z-index: 1;
     display:flex;
@@ -291,3 +290,14 @@ header {
 .info-content-item-desc p{
     margin: var(--xs-size);
 }
+
+/* esconder local aluno */
+
+/* .esconder-aluno {
+    display:none;
+} 
+
+.mostrar-aluno {
+    display: block;
+    background-color: var(--cor-cinza-padrao);
+} */

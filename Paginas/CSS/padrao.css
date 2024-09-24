@@ -63,3 +63,45 @@ a{
 .text-centered {
     text-align: center;
 }
+
+/* Parte Header do IFC */
+
+
+
+header{ /*Todo header é igual.*/
+    background-color: var(--cor-verde-header);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+}
+
+#if-logo {
+    width: 2vw;
+    position:absolute;
+    left:1vw;
+    align-self: center;
+}
+
+
+.header-sigaa-h1 {
+    margin:0;
+    padding: 0.5vh 0 0 0;
+    font-size: 2rem;
+}
+
+.header-sigaa-h3 {
+    margin:0;
+    font-size: 0.75rem;
+}
+
+
+body {
+    margin:0;
+}
+
+/* Fim header IFC */
