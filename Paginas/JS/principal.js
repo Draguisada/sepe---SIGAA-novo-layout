@@ -21,26 +21,28 @@ function colorizeNotas() {
 
 colorizeNotas();
 
-// function mostrarPerfilAluno() {
-//     let perfil_estudante = document.getElementById('perfil-estudante');
-//     let segmentos = document.getElementsByClassName('segmentos-perfil-estudante');
+function mostrarPerfilAluno() {
+    let perfil_estudante = document.getElementById('perfil-estudante');
+    var esconder = document.getElementsByClassName('esconder-aluno');
+    var mostrar = document.getElementsByClassName('mostrar-aluno');
 
     
-//     if (perfil_estudante.classList.contains('mostrar-aluno')) {
+    if (perfil_estudante.classList.contains('mostrar-aluno')) {
         
 
-//         for (i=0; i<segmentos.length; i++){
-//             segmentos[i].classList.remove('mostrar-aluno');
-//             segmentos[i].classList.add('esconder-aluno');
-//         }
-//         perfil_estudante.classList.remove('mostrar-aluno');
-//         return 0;
-//     }
+        for (i=0; i<=mostrar.length; i++){
+            mostrar[0].classList.remove('mostrar-aluno');
+            mostrar[0].classList.add('esconder-aluno');
+        }
+        mostrar[0].classList.remove('mostrar-aluno');
+        mostrar[0].classList.add('esconder-aluno');
+        return 0;
+    }
 
-//     for (i=0; i<=segmentos.length; i++){
-//         segmentos[i].classList.add('mostrar-aluno');
-//         segmentos[i].classList.remove('esconder-aluno');
-//     }
+    for (i=0; i<=esconder.length; i++){
+        esconder[0].classList.add('mostrar-aluno');
+        esconder[0].classList.remove('esconder-aluno');
+    }
 
-//     perfil_estudante.classList.add('mostrar-aluno');
-// }
+    perfil_estudante.classList.add('mostrar-aluno');
+}

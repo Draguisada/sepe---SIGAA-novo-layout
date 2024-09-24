@@ -293,11 +293,11 @@ header {
 
 /* esconder local aluno */
 
-/* .esconder-aluno {
+.esconder-aluno {
     display:none;
 } 
 
 .mostrar-aluno {
     display: block;
     background-color: var(--cor-cinza-padrao);
-} */
+}
