@@ -89,7 +89,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: var(--titulo-text);
-    margin: 0 15px;
+    margin: 10px;
     row-gap: 5vh;
 }
 
@@ -175,11 +175,25 @@ header {
 
 /* Perfil estudante Fim */
 
-
+.main-content-bar {
+    cursor: pointer;
+    background-color: var(--cor-cinza-padrao);
+    font-size: var(--titulo-text);
+    color: var(--cor-verde-destaque);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    font-weight: bold;
+    user-select: none;
+    text-decoration: none;
+}
+.main-content-bar:hover {
+    text-decoration: underline;
+}
 /* Main Content Menu*/
 
 #main-content-menu {
-    display: flex;
+    display: none;
     justify-content: space-between; /* Equal spacing between items */
     align-items: top; /* Vertically centers items */
     flex-wrap: nowrap; /* Prevents wrapping */
@@ -220,6 +234,22 @@ header {
 
 
 /* Acabou Main Content Menu*/
+#section-highschool {
+    display: none;
+    flex-wrap: wrap;
+    gap: 16px; /* Optional: Adjust the space between cards */
+    justify-content: space-around; /* Centers the content horizontally */
+}
+.subject-type {
+    flex: 1 1 100px; /* Allows each card to grow/shrink while maintaining a minimum width */
+    max-width: 275px; /* Optional: Set a maximum width */
+    box-sizing: border-box;
+}
+
+
+
+
+
 
 #main-content-info {
     display: flex;
@@ -300,4 +330,37 @@ header {
 .mostrar-aluno {
     display: block;
     background-color: var(--cor-cinza-padrao);
+}
+
+/* tabela-atividades */
+
+#tabela-atividades {
+    background-color: var(--cor-cinza-padrao);
+    border-radius: 10px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+
+#tabela-atividades-cabecalho, .tabela-atividades-atividade {
+    overflow: hidden; /* Clear floats */
+    padding: 10px;
+}
+
+#tabela-atividades-cabecalho {
+    background-color: var(--cor-verde-header);
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    color: white;
+}
+
+.tabela-atividades-titulo-1, .tabela-atividade-data {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.tabela-atividades-titulo-2, .tabela-atividade-desc {
+    float: right;
+    width: 60%;
+    text-align: center;
 }

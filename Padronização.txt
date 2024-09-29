@@ -14,3 +14,15 @@ Sempre importar o CSS padrao.css nos .css
 
 #Layout:
     Bordas: 10px
+
+#Ao desenvolver um site, o ideal é utilizar **IDs** e **classes** de acordo com suas funções específicas, em vez de escolher apenas um. Aqui estão algumas recomendações:
+
+- **Classes**: Use classes quando você precisa aplicar estilos ou comportamentos para múltiplos elementos. Elas são reutilizáveis e perfeitas para criar uma padronização em vários componentes de um site (por exemplo, botões, seções, etc.).
+
+- **IDs**: IDs devem ser exclusivos por página, ou seja, cada ID só pode ser atribuído a um elemento. Eles são úteis quando você precisa de um estilo ou comportamento específico para um único elemento.
+
+### Melhor prática:
+- Use **classes** para estilizar elementos repetidos ou para componentes que você reutiliza em diferentes lugares.
+- Use **IDs** para elementos únicos, como uma barra de navegação ou uma seção específica que não se repete.
+
+Isso garante flexibilidade e mantém o código mais organizado e fácil de manter.

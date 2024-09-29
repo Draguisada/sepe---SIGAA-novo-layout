@@ -46,3 +46,11 @@ function mostrarPerfilAluno() {
 
     perfil_estudante.classList.add('mostrar-aluno');
 }
+function toggleVisibility(elementId) {
+    var element = document.getElementById(elementId);
+    if (element.style.display === "none" || element.style.display === "") {
+        element.style.display = "flex";
+    } else {
+        element.style.display = "none";
+    }
+}

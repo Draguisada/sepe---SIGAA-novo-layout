@@ -27,7 +27,9 @@
     <!-- Iniciar main content / Navbar -->
     <!-- Acabar Navbar -->
     <div id="main-content">
-
+        <div class="main-content-bar text-centered" onclick="toggleVisibility('main-content-menu')">
+            Menu Aluno
+        </div>
         <div id="main-content-menu" class="text-centered">
             <div class="main-content-menu-item">
                 <div class="main-content-menu-item-img"><img src="Imagens/Icones/placeholder.png" alt=""></div>
@@ -75,11 +77,34 @@
             </div>
         </div>
          <!-- Noticias fim-->
-        <div id="main-content-subject">
+        <div class="main-content-bar text-centered" onclick="toggleVisibility('section-highschool')">
+            Ensino Médio
+        </div>
+        <div id="section-highschool">
             <div class="subject-type">
                 <div class="subject-type-header text-centered"></div>
                 <div class="subject-type-content">
-                    <!--CARDS-->
+                    <div class="nota-card">
+                        <div class="nota-titulo text-centered">
+                            <div class="nota-titulo-materia">Artes</div>
+                            <div class="nota-titulo-professor">Valéria M. de Alvarenga</div>
+                        </div>
+                        <div class="nota-conteudo text-centered">
+                            <div class="nota-conteudo-local">
+                                <div class="nota-conteudo-local-texto">Local:</div>
+                                <div class="nota-conteudo-local-valor">Turma 1G</div>
+                            </div>
+                            <div class="nota-conteudo-nota">
+                                <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
+                                <div class="nota-conteudo-nota-valor"><strong>9.5</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subject-type">
+                <div class="subject-type-header text-centered"></div>
+                <div class="subject-type-content">
                     <div class="nota-card">
                         <div class="nota-titulo text-centered">
                             <div class="nota-titulo-materia">Biologia</div>
@@ -92,25 +117,108 @@
                             </div>
                             <div class="nota-conteudo-nota">
                                 <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
+                                <div class="nota-conteudo-nota-valor"><strong>6.9</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subject-type">
+                <div class="subject-type-header text-centered"></div>
+                <div class="subject-type-content">
+                    <div class="nota-card">
+                        <div class="nota-titulo text-centered">
+                            <div class="nota-titulo-materia">Ed. Física</div>
+                            <div class="nota-titulo-professor">Cleiton Bosio</div>
+                        </div>
+                        <div class="nota-conteudo text-centered">
+                            <div class="nota-conteudo-local">
+                                <div class="nota-conteudo-local-texto">Local:</div>
+                                <div class="nota-conteudo-local-valor">Ginásio</div>
+                            </div>
+                            <div class="nota-conteudo-nota">
+                                <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
                                 <div class="nota-conteudo-nota-valor"><strong>10</strong></div>
                             </div>
                         </div>
                     </div>
-                    <!--CARDS END-->
                 </div>
             </div>
             <div class="subject-type">
                 <div class="subject-type-header text-centered"></div>
                 <div class="subject-type-content">
-
+                    <div class="nota-card">
+                        <div class="nota-titulo text-centered">
+                            <div class="nota-titulo-materia">Física</div>
+                            <div class="nota-titulo-professor">Carlos J. S. Amorim</div>
+                        </div>
+                        <div class="nota-conteudo text-centered">
+                            <div class="nota-conteudo-local">
+                                <div class="nota-conteudo-local-texto">Local:</div>
+                                <div class="nota-conteudo-local-valor">Turma 1G</div>
+                            </div>
+                            <div class="nota-conteudo-nota">
+                                <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
+                                <div class="nota-conteudo-nota-valor"><strong>7.5</strong></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="subject-type">
                 <div class="subject-type-header text-centered"></div>
                 <div class="subject-type-content">
-
+                    <div class="nota-card">
+                        <div class="nota-titulo text-centered">
+                            <div class="nota-titulo-materia">Geografia</div>
+                            <div class="nota-titulo-professor">Flavio A. Manfrin</div>
+                        </div>
+                        <div class="nota-conteudo text-centered">
+                            <div class="nota-conteudo-local">
+                                <div class="nota-conteudo-local-texto">Local:</div>
+                                <div class="nota-conteudo-local-valor">Turma 1G</div>
+                            </div>
+                            <div class="nota-conteudo-nota">
+                                <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
+                                <div class="nota-conteudo-nota-valor"><strong>8.8</strong></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="subject-type">
+                <div class="subject-type-header text-centered"></div>
+                <div class="subject-type-content">
+                    <div class="nota-card">
+                        <div class="nota-titulo text-centered">
+                            <div class="nota-titulo-materia">História</div>
+                            <div class="nota-titulo-professor">Maria D. Bortolini </div>
+                        </div>
+                        <div class="nota-conteudo text-centered">
+                            <div class="nota-conteudo-local">
+                                <div class="nota-conteudo-local-texto">Local:</div>
+                                <div class="nota-conteudo-local-valor">Turma 1G</div>
+                            </div>
+                            <div class="nota-conteudo-nota">
+                                <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
+                                <div class="nota-conteudo-nota-valor"><strong>9.3</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content-bar text-centered" onclick="toggleVisibility('section-technical')">
+            Técnico
+        </div>
+        <div id="section-technical">
+
+        </div>
+        <div class="main-content-bar text-centered" onclick="toggleVisibility('section-opt')">
+            Optativas
+        </div>
+        <div id="section-opt">
+
         </div>
     </div>
     <aside id="side-menu">
@@ -170,8 +278,8 @@
 
         <div id="tabela-atividades">
             <div id="tabela-atividades-cabecalho">
-                <div class="tabela-atividades-titulo">Data:</div>
-                <div class="tabela-atividades-titulo">Atividade:</div>
+                <div class="tabela-atividades-titulo-1">Data:</div>
+                <div class="tabela-atividades-titulo-2">Atividade:</div>
             </div>
             <div id="tabela-atividades-conteudo">
                 <div class="tabela-atividades-atividade">
