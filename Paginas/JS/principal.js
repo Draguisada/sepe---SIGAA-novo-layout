@@ -46,6 +46,8 @@ function mostrarPerfilAluno() {
 
     perfil_estudante.classList.add('mostrar-aluno');
 }
+
+
 function toggleVisibility(elementId) {
     var element = document.getElementById(elementId);
     if (element.style.display === "none" || element.style.display === "") {
@@ -54,3 +56,7 @@ function toggleVisibility(elementId) {
         element.style.display = "none";
     }
 }
+
+toggleVisibility('section-highschool')
+toggleVisibility('section-technical')
+toggleVisibility('section-opt')

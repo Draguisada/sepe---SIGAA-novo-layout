@@ -57,7 +57,7 @@ header {
     font-weight: bold;
     display:inline-flex;
     justify-self: center;
-    padding: 01em 0.5em;
+    padding: 5% 0.5em;
     gap: var(--l-size);   
 }
 /* card pequeno fim */
@@ -192,6 +192,10 @@ header {
 }
 /* Main Content Menu*/
 
+.main-content > .main-content-bar  {
+    background-color: red;
+}
+
 #main-content-menu {
     display: none;
     justify-content: space-between; /* Equal spacing between items */
@@ -238,7 +242,8 @@ header {
     display: none;
     flex-wrap: wrap;
     gap: 16px; /* Optional: Adjust the space between cards */
-    justify-content: space-around; /* Centers the content horizontally */
+    justify-content: space-evenly; /* Centers the content horizontally */
+    margin-left:2vw;
 }
 .subject-type {
     flex: 1 1 100px; /* Allows each card to grow/shrink while maintaining a minimum width */
@@ -246,9 +251,22 @@ header {
     box-sizing: border-box;
 }
 
+#section-technical {
+    display: none;
+    flex-wrap: wrap;
+    gap: 16px; /* Optional: Adjust the space between cards */
+    justify-content: space-evenly; /* Centers the content horizontally */
+    margin-left:2vw;
+}
 
-
-
+#section-opt {
+    display: none;
+    flex-wrap: wrap;
+    gap: 16px; /* Optional: Adjust the space between cards */
+    justify-content: space-evenly; /* Centers the content horizontally */
+    margin-left:2vw;
+    margin-bottom: 3vh;
+}
 
 
 #main-content-info {
