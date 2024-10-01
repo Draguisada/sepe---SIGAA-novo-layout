@@ -131,3 +131,51 @@ nav {
     background-color: var(--cor-verde-header);
     color: var(--cor-branco-padrao);
 }
+
+#body-aula {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr auto;
+    width: 100%;
+    height: max-content;
+}
+
+.container-aula {
+    width: 45%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.container-aula h3 {
+    font-size: var(--xxm-size);
+    margin: 1% 0;
+}
+
+.ultima-noticia {
+    background-color: var(--cor-verde-destaque);
+}
+
+.ultima-aula {
+    background-color: var(--cor-cinza-padrao);
+    color: var(--cor-preto-padrao);
+    
+}
+
+.local-download {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1%;
+}
+
+.downloadable {
+    cursor: pointer;
+    margin: 1% 0;
+    display: flex;
+    background-color: white;
+    
+    font-weight: 600;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}

@@ -384,6 +384,13 @@ header {
 }
 /* bagulho novo */
 
+.config-perfil {
+    max-width: 3vw;
+    height: auto;
+}
+
+
+
 
 .main-content-menu-item {
     position: relative;
@@ -398,7 +405,7 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 100%;
     left: 0;
     background-color: #f9f9f9;
     min-width: 200px;
