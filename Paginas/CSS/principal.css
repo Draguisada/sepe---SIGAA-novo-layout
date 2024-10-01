@@ -382,3 +382,42 @@ header {
     width: 60%;
     text-align: center;
 }
+/* bagulho novo */
+
+
+.main-content-menu-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.main-content-menu-item-desc {
+    text-align: center;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 3px 4px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.main-content-menu-item:hover .dropdown-content {
+    display: block;
+}
