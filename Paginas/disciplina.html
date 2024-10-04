@@ -23,70 +23,86 @@
         </table>
     </header>
     <!-- header fim-->
-     <!-- "Navbar" -->
-    <nav>
-        <div id="nome-materia">
-            <h2 onclick="troca(this)">Biologia</h2>
-        </div>
-
-        <div id="menu-burger-config">
-            <p onclick="selectSection(this)" class="menu-burger">Turma</p>
-            <p onclick="selectSection(this)" class="menu-burger">Atividade</p>
-            <p onclick="selectSection(this)" class="menu-burger">Materias</p>
-            <p onclick="selectSection(this)" class="menu-burger">Aluno</p>
-            <p onclick="selectSection(this)" class="menu-burger">Estatística</p>
-        </div>
-    </nav>
-
-    <div id="andamento-aula">
-        <h3>Andamento das aulas</h3>
-        <p>Aulas Ministradas/Totais: 28/80</p>
-        <div id="slider-percent">
-            <div id="slider-atual">
-                <p>35%</p>
+    <div id="content-full">
+        <div id="content-left">
+            <div id="nome-materia">
+                <h2 onclick="troca(this)">Biologia</h2>
             </div>
-        </div>
-        <p>% de Carga Horária Ministrada</p>
-        <p>Nota: 7.9 | 8.0</p>
-        <p>Média do trimestre: 8</p>
-        <p>Faltas: 0</p>
-
-    </div>
-
-    <div id="body-aula">
-        <div id="ultima-noticia-aula">
-            <div class="container-aula ultima-noticia">
-                <h3>Últimas notícias</h3>
-                <strong>instruções para quem está abrindo os slides das aulas com os textos desconfigurados - 14/06/2024 19:31</strong> <br>
-                <par>Olá! Algumas pessoas estão abrindo os arquivos dos "slides das aulas" com os textos desses arquivos aparecendo ilegíveis e desconfigurados. Segue aqui algumas instruções para resolver isso, caso esse seja o teu caso.
-
-                    1) Baixe os arquivos apenas pelo computador e não pelo celular. O celular irá desconfigurar os arquivos.
-                    
-                    2)Mesmo se o problema continuar com você abrindo os arquivos pelo computador, isso significa que você não tem um programa de leitor de arquivos no formato PDF. Basta você fazer o dowload gratuito do programa "Adobe Acrobat DC". Esse arquivo vai abrir automaticamente todos os arquivos no formato PDF que você baixar no computador.
-                    
-                    Era isso. Qualquer coisa, me avisem.
-                    
-                    Abração!
-                </par>
-            </div>
-            <div class="container-aula ultima-aula">
-                <h3>Última aula</h3>
-                <strong>NÚCLEO CELULAR</strong> <br>
-                <par>Descoberta. Constituintes do núcleo e suas funções. Origem. Tipos de células em relação ao número de núcleos presentes. Gene. Cromátides. Cromossomos (sua constituição). Ploidia. CICLO CELULAR (INTERFASE).
-                </par> <br>
-                <div class="local-download">
-                    <div class="downloadable">
-                        <img src="Imagens/Icones/Download.svg" alt="Fazer Download">
-                        <p>SLIDES DA AULA - núcleo celular</p>
+            <div id="andamento-aula">
+                <h3>Andamento das aulas</h3>
+                <p>Aulas Ministradas/Totais: 28/80</p>
+                <div id="slider-percent">
+                    <div id="slider-atual">
+                        <p>35%</p>
                     </div>
-                    <div class="downloadable">
-                        <img src="Imagens/Icones/Download.svg" alt="Fazer Download">
-                        <p>estudo dirigido - CICLO CELULAR</p>
+                </div>
+                <p>% de Carga Horária Ministrada</p>
+                <p>Nota: 7.9 | 8.0</p>
+                <p>Média do trimestre: 8</p>
+                <p>Faltas: 0</p>
+        
+            </div>
+            <div class="botao-manual">Manual da Tuma Virtual</div>
+        </div>
+        <div id="content-mid">
+            <div id="menu-burger-config">
+                <p onclick="selectSection(this)" class="menu-burger">Turma</p>
+                <p onclick="selectSection(this)" class="menu-burger">Atividade</p>
+                <p onclick="selectSection(this)" class="menu-burger">Materias</p>
+                <p onclick="selectSection(this)" class="menu-burger">Aluno</p>
+                <p onclick="selectSection(this)" class="menu-burger">Estatística</p>
+            </div>
+            <div id="body-aula">
+                <div id="ultima-noticia-aula">
+                    <div class="container-aula ultima-noticia">
+                        <h3>Últimas notícias</h3>
+                        <strong>instruções para quem está abrindo os slides das aulas com os textos desconfigurados - 14/06/2024 19:31</strong> <br>
+                        <par>Olá! Algumas pessoas estão abrindo os arquivos dos "slides das aulas" com os textos desses arquivos aparecendo ilegíveis e desconfigurados. Segue aqui algumas instruções para resolver isso, caso esse seja o teu caso.
+        
+                            1) Baixe os arquivos apenas pelo computador e não pelo celular. O celular irá desconfigurar os arquivos.
+                            
+                            2)Mesmo se o problema continuar com você abrindo os arquivos pelo computador, isso significa que você não tem um programa de leitor de arquivos no formato PDF. Basta você fazer o dowload gratuito do programa "Adobe Acrobat DC". Esse arquivo vai abrir automaticamente todos os arquivos no formato PDF que você baixar no computador.
+                            
+                            Era isso. Qualquer coisa, me avisem.
+                            
+                            Abração!
+                        </par>
+                    </div>
+                    <div class="container-aula ultima-aula">
+                        <h3>Última aula</h3>
+                        <strong>NÚCLEO CELULAR</strong> <br>
+                        <par>Descoberta. Constituintes do núcleo e suas funções. Origem. Tipos de células em relação ao número de núcleos presentes. Gene. Cromátides. Cromossomos (sua constituição). Ploidia. CICLO CELULAR (INTERFASE).
+                        </par> <br>
+                        <div class="local-download">
+                            <div class="downloadable">
+                                <img src="Imagens/Icones/Download.svg" alt="Fazer Download">
+                                <p>SLIDES DA AULA - núcleo celular</p>
+                            </div>
+                            <div class="downloadable">
+                                <img src="Imagens/Icones/Download.svg" alt="Fazer Download">
+                                <p>estudo dirigido - CICLO CELULAR</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div  class="info-items">Ver aulas anteriores</div>
+            <div  class="info-items">SISTEMA DE ESTUDOS DE RECUPERAÇÃO (AULA) & ORGANELAS: Estudo das MITOCÔNDRIAS & CLOROPLASTOS. (22/07/2024 - 22/07/2024)</div>
+            <div  class="info-items">Não Haverá Aula - FERIADO (29/07/2024)</div>
+            <div  class="info-items">-------- (05/08/2024 - 05/08/2024)</div>
+            <div  class="info-items">ALTERAÇÕES CROMOSSÔMICAS: Alterações estruturais e numéricas. Mosaicismo. (12/08/2024 - 12/08/2024)</div>
+            <div  class="info-items">SISTEMA DE ESTUDOS DE RECUPERAÇÃO (AULA) (19/08/2024 - 19/08/2024)</div>
+            <div  class="info-items">1ª Avaliação (3º TRIMESTRE) - O conteúdo desta avaliação será o que segue: NÚCLEO, CICLO CELULAR (interfase, mitose e meiose) e ALTERAÇÕES CROMOSSÔMICAS. (26/08/2024 - 26/08/2024)</div>
+        </div>
+        <div id="content-right">
+            <div onclick="selectSection(this)" class="menu-burger">Notícias</div>
+            <div onclick="selectSection(this)" class="menu-burger">Avaliações</div>
         </div>
     </div>
+
+    
+
+   
 
 
 </body>

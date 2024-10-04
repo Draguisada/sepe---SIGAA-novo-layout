@@ -4,10 +4,32 @@
 --azul-slider: #195FC8;
 }
 
-nav {
-    display: flex;
-    width: 80vw;
-}
+    /* Apply general styling */
+    #content-left, #content-mid, #content-right {
+        display: inline-block; /* Align elements horizontally */
+        vertical-align: top; /* Align elements to the top */
+        padding: 0 10px; /* Add some padding for spacing */
+        box-sizing: border-box; /* Include padding and border in the element's width */
+    }
+
+    /* Set specific widths for each section */
+    #content-left {
+        width: 25%; /* Occupies 25% of the screen */
+    }
+
+    #content-mid {
+        width: 50%; /* Occupies 50% of the screen */
+    }
+
+    #content-right {
+        width: 25%; /* Occupies 25% of the screen */
+    }
+
+    /* Optional styling */
+    #content-full {
+        display: flex;
+        justify-content: center; /* Center the content */
+    }
 
 #nome-materia {
     display:flex;
@@ -17,7 +39,7 @@ nav {
     text-align: center;
 
     padding:0 1% 0.5%;
-    margin-left: 2vw;
+    margin: auto;
 }
 
 #nome-materia h2 {
@@ -61,13 +83,48 @@ nav {
 
 /* Navbar acabou */
 
+.info-items {
+    background-color: var(--cor-cinza-padrao);
+    border-radius: 10px;
+    margin: var(--m-size) 0;
+
+    height: 6vh;
+
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+
+    color: var(--cor-preto-padrao);
+    font-weight: 600;
+    font-size: var(--m-size);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.botao-manual {
+    background-color: #70906e;
+    border-radius: 10px;
+    margin: auto;
+    width: 23vh;
+    height: 6vh;
+
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+
+    color: var(--cor-branco-padrao);
+    font-weight: 600;
+    font-size: var(--titulo-text);
+
+    transition: all 0.2s ease-in-out;
+}
+
 #andamento-aula{
 
     background-color: var(--cor-cinza-padrao);
     display:grid;
-    margin: 1vh calc(2vw + 0.5%); /* AQUI Ó*/
+    margin:10px auto; /* AQUI Ó*/
     width: 18vw;
-    height: 5%;
 
     align-items: center;
     text-align: center;
@@ -141,9 +198,12 @@ nav {
 }
 
 .container-aula {
-    width: 45%;
+    width: 46%;
     padding: 1%;
     border-radius: 10px;
+    margin: 1%;
+    height: 450px;
+
 }
 
 .container-aula h3 {
@@ -153,11 +213,13 @@ nav {
 
 .ultima-noticia {
     background-color: var(--cor-verde-destaque);
+    float: left;
 }
 
 .ultima-aula {
     background-color: var(--cor-cinza-padrao);
     color: var(--cor-preto-padrao);
+    float: right;
     
 }
 
