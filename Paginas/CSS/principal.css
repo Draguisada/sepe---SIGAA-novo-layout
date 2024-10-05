@@ -428,3 +428,8 @@ header {
 .main-content-menu-item:hover .dropdown-content {
     display: block;
 }
+
+
+#aovivo {
+    transition: all 0.5s ease-in;
+}

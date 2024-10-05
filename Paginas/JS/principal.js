@@ -60,3 +60,40 @@ function toggleVisibility(elementId) {
 toggleVisibility('section-highschool')
 toggleVisibility('section-technical')
 toggleVisibility('section-opt')
+
+
+// Função que retorna um intervalo de tempo aleatório em milissegundos
+function intervaloAleatorio(min, max) {
+    // Gera um número aleatório entre min e max, multiplica por 1000 para converter em milissegundos
+    return Math.floor(Math.random() * (max - min + 1) + min) * 1000;
+}
+
+// Função que altera o conteúdo do elemento HTML com id 'aovivo'
+function mudaConteudo() {
+    // Obtém o elemento HTML com id 'aovivo'
+    const aovivo = document.getElementById('aovivo');
+    
+    // Arrays de mensagens categorizadas em positivas, negativas e neutras
+    const noticias = [
+        'Não há notícias cadastradas',
+        'Reunião de pais às 18h no auditório. Contamos com a presença de todos para discutir o desempenho escolar e atividades futuras.',
+        'Palestra sobre saúde mental para os alunos do Ensino Médio às 14h, no auditório. Participação obrigatória.',
+        'SEPE aberta ao público das 9h às 12h. Venham prestigiar os projetos dos nossos alunos!.',
+        'Treinamento de vôlei às 8h no ginásio. Todos os interessados devem confirmar presença com o professor Isoton.',
+        'Lembramos que segunda-feira não haverá aulas devido ao feriado nacional. Aproveitem para descansar!',
+    ];
+
+    // Combina todas as mensagens em um único array
+    
+    // Seleciona uma mensagem aleatória do array combinado
+    const mensagemAleatoria = noticias[Math.floor(Math.random() * noticias.length)];
+
+    // Atualiza o conteúdo do elemento 'aovivo' com a mensagem aleatória selecionada
+    aovivo.innerHTML = mensagemAleatoria;
+
+    // Chama a função mudaConteudo novamente após um intervalo aleatório entre 1 e 4 segundos
+    setTimeout(mudaConteudo, 8000);
+}
+
+// Inicia a função mudaConteudo para começar a alterar o conteúdo periodicamente
+mudaConteudo();
