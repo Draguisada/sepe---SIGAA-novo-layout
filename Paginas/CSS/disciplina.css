@@ -22,7 +22,8 @@
     }
 
     #content-right {
-        width: 25%; /* Occupies 25% of the screen */
+        width: 20%; /* Occupies 25% of the screen */
+        justify-content: right;
     }
 
     /* Optional styling */
@@ -33,7 +34,7 @@
 
 #nome-materia {
     display:flex;
-    width: 30%;
+    width: fit-content;
     height: fit-content;
     justify-content: center;
     text-align: center;
@@ -64,6 +65,7 @@
 }
 
 .menu-burger {
+    cursor: pointer;
     background-color: var(--cor-cinza-padrao);
     border-radius: 10px;
     margin: var(--m-size) 0;
@@ -79,6 +81,10 @@
     font-size: var(--titulo-text);
 
     transition: all 0.2s ease-in-out;
+}
+
+.menu-burger[class~="side"] {
+    width: 50%;
 }
 
 /* Navbar acabou */
@@ -102,11 +108,12 @@
 }
 
 .botao-manual {
-    background-color: #70906e;
+    background-color: var(--cor-verde-acizentado);
     border-radius: 10px;
     margin: auto;
     width: 23vh;
     height: 6vh;
+    cursor: pointer;
 
     align-content: center;
     justify-items: center;
@@ -173,7 +180,7 @@
 }
 
 #slider-atual {
-    width: 35%;
+    width: 55%;
     height: 100%;
     background-color: var(--azul-slider);
     border-radius: 10px;
@@ -190,19 +197,18 @@
 }
 
 #body-aula {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr auto;
+    display: flex;
     width: 100%;
     height: max-content;
+    justify-content: space-between;
 }
 
 .container-aula {
-    width: 46%;
+    width: 47%;
     padding: 1%;
     border-radius: 10px;
-    margin: 1%;
-    height: 450px;
+    /* margin: 1%; */
+    height: fit-content;
 
 }
 
@@ -227,6 +233,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 1%;
+    gap: 1%;
 }
 
 .downloadable {
@@ -236,8 +243,25 @@
     background-color: white;
     
     font-weight: 600;
+    font-size: var(--normal-text);
     width: fit-content;
+    justify-content: space-between;
     padding: 1%;
     border-radius: 10px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: underline;
+}
+
+.aula-anterior {
+    color: var(--cor-verde-destaque);
+    font-weight: bolder;
+}
+
+.aula-anterior:hover {
+    background-color: var(--cor-verde-destaque);
+    color: var(--cor-branco-padrao)
+}
+
+.nao-aula {
+    color: red;
 }

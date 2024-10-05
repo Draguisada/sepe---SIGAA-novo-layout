@@ -81,10 +81,13 @@ table {
 }
 
 #if-logo {
-    width: 2vw;
     position:absolute;
     left:1vw;
     align-self: center;
+}
+
+#if-logo img {
+    width: 2vw;
 }
 
 
