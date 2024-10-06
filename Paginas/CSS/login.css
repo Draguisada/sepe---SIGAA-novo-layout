@@ -51,12 +51,18 @@ nav{
     bottom: 0;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2rem 1fr;
+    grid-template-rows: 4vh 1fr;
     column-gap: 2vw;
 }
 
+footer#rodape {
+    position: absolute;
+    bottom: 0;
+}
+
+
 .cadastro h2 {
-    margin: 1.5rem 0;
+    padding: 2vh 0;
     grid-column: 2;
     text-align: center;
     color: var(--cor-preto-padrao)
@@ -66,7 +72,7 @@ nav{
     display:inline-block;
     /* padding: 1vw 1vh; */
     grid-row: 2;
-    
+    padding: 2vh 0;
 }
 
 .footer-section h3{
@@ -127,6 +133,7 @@ section {
     border:0px;
     box-sizing:border-box;
 }
+
 
 #entrar {
     position: relative;

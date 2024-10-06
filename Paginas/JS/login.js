@@ -28,3 +28,31 @@ let img_fundo = document.getElementsByClassName('img-fundo')
 for (i=0; i<img_fundo.length; i++) {
     img_fundo[i].style.transform = "RotateZ(" + Math.ceil(Math.random() * 100) + "deg) Translate(" + getRandomIntInclusive(-25, 25) + "%, " + getRandomIntInclusive(-25, 25) + "%)";
 }
+
+var colorScheme = 1
+
+function changeColorScheme() {
+    cores = document.getElementById('cores');
+    ifc = document.getElementById('nome-ifc');
+    if (colorScheme == 1) {
+        cores.href = "Paginas/CSS/Cores/coresTrans.css";
+        ifc.innerHTML = 'IFC - SIGAA - Tema Trans'
+    } else if (colorScheme == 2) {
+        cores.href = "Paginas/CSS/Cores/coresNonBinary.css";
+        ifc.innerHTML = 'IFC - SIGAA - Tema Não Binário'
+    } else if (colorScheme == 4) {
+        cores.href = "Paginas/CSS/Cores/coresSigClassico.css";
+        ifc.innerHTML = 'IFC - SIGAA - Tema SIGAA Clássico'
+    } else if (colorScheme == 3) {
+        cores.href = "Paginas/CSS/Cores/coresPan.css";
+        ifc.innerHTML = 'IFC - SIGAA - Tema Pan'
+    }
+     else {
+        cores.href = "Paginas/Css/coresWhite.css"
+        ifc.innerHTML = 'IFC - SIGAA'
+        colorScheme = 0;
+    }
+
+
+    colorScheme++;
+}

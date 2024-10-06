@@ -22,8 +22,13 @@
     }
 
     #content-right {
-        width: 20%; /* Occupies 25% of the screen */
+        width: 24%; /* Occupies 25% of the screen */
         justify-content: right;
+    }
+
+    #noticias-avaliacoes {
+        display:flex;
+        gap: 10%;
     }
 
     /* Optional styling */
@@ -59,7 +64,7 @@
     justify-items: stretch;
     align-items: stretch;
 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
 
 }
@@ -204,7 +209,7 @@
 }
 
 .container-aula {
-    width: 47%;
+    width: 98%;
     padding: 1%;
     border-radius: 10px;
     /* margin: 1%; */
@@ -219,7 +224,7 @@
 
 .ultima-noticia {
     background-color: var(--cor-verde-destaque);
-    float: left;
+    margin-top: var(--m-size);
 }
 
 .ultima-aula {
@@ -253,8 +258,10 @@
 }
 
 .aula-anterior {
-    color: var(--cor-verde-destaque);
+    color: var(--cor-branco-padrao);
+    background-color: var(--cor-verde-header);
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .aula-anterior:hover {
@@ -264,4 +271,33 @@
 
 .nao-aula {
     color: red;
+}
+
+.config-perfil {
+    max-width: 3vw;
+    height: auto;
+    margin-right: 2vw;
+}
+
+footer#rodape {
+    position: absolute;
+    bottom: 0;
+}
+
+#trocar-disciplina {
+    display: flex;
+    background-color: var(--cor-verde-acizentado);
+    border-radius: 10px;
+    margin-right: 1%;
+    right: 0;
+    position: relative;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    justify-content: right;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
 }

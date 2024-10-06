@@ -1,0 +1,16 @@
+:root {
+    /* Cores Inicio */
+    /*Usado em Header e locais de exposição*/
+    --cor-verde-header: #404E82;
+    /*Usado para locais desmarcados*/
+    --cor-verde-acizentado: #EFF3FA;
+    /* Cor Branco padrão */
+    --cor-branco-padrao: #003395;
+    /* Cor verde destaques */
+    --cor-verde-destaque: #336;
+    /* Cor Cinza padrão */
+    --cor-cinza-padrao: #C4D2EB;
+    /* Cor Preta texto não-editavel por aluno */
+    --cor-preto-padrao: #444444;
+    /* Cores Final */
+}

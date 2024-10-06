@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGAA</title>
     <link rel="stylesheet" href="CSS/disciplina.css">
+    <link rel="stylesheet" href="CSS/coresWhite.css" id="cores">
 
 </head>
 <body>
@@ -21,6 +22,10 @@
                 <td class="td-header"><h3 class="header-sigaa-h3">Sistema Integrado de Gestão de Atividades Acadêmicas</h3></td>
             </tr>
         </table>
+        <div class="right">
+            <a href="principal.html"><img class="config-perfil" src="Imagens/Icones/Sair.svg" alt="Sair da conta"></a>
+            <p id="trocar-disciplina">Trocar de disciplina</p>
+        </div>
     </header>
     <!-- header fim-->
     <div id="content-full">
@@ -42,32 +47,20 @@
                 <p>Faltas: 0</p>
         
             </div>
-            <div class="botao-manual">Manual da Tuma Virtual</div>
+
         </div>
         <div id="content-mid">
             <div id="menu-burger-config">
                 <p onclick="selectSection(this)" class="menu-burger">Turma</p>
+                <p onclick="selectSection(this)" class="menu-burger">Aluno</p>
                 <p onclick="selectSection(this)" class="menu-burger">Atividade</p>
                 <p onclick="selectSection(this)" class="menu-burger">Materias</p>
-                <p onclick="selectSection(this)" class="menu-burger">Aluno</p>
-                <p onclick="selectSection(this)" class="menu-burger">Estatística</p>
+                
+                
             </div>
             <div id="body-aula">
                 <div id="ultima-noticia-aula">
-                    <div class="container-aula ultima-noticia">
-                        <h3>Últimas notícias</h3>
-                        <strong>instruções para quem está abrindo os slides das aulas com os textos desconfigurados - 14/06/2024 19:31</strong> <br>
-                        <par>Olá! Algumas pessoas estão abrindo os arquivos dos "slides das aulas" com os textos desses arquivos aparecendo ilegíveis e desconfigurados. Segue aqui algumas instruções para resolver isso, caso esse seja o teu caso.
-        
-                            1) Baixe os arquivos apenas pelo computador e não pelo celular. O celular irá desconfigurar os arquivos.
-                            
-                            2)Mesmo se o problema continuar com você abrindo os arquivos pelo computador, isso significa que você não tem um programa de leitor de arquivos no formato PDF. Basta você fazer o dowload gratuito do programa "Adobe Acrobat DC". Esse arquivo vai abrir automaticamente todos os arquivos no formato PDF que você baixar no computador.
-                            
-                            Era isso. Qualquer coisa, me avisem.
-                            
-                            Abração!
-                        </par>
-                    </div>
+                    
                     <div class="container-aula ultima-aula">
                         <h3>Última aula</h3>
                         <strong>NÚCLEO CELULAR</strong> <br>
@@ -95,8 +88,24 @@
             <div  class="info-items">1ª Avaliação (3º TRIMESTRE) - O conteúdo desta avaliação será o que segue: NÚCLEO, CICLO CELULAR (interfase, mitose e meiose) e ALTERAÇÕES CROMOSSÔMICAS. (26/08/2024 - 26/08/2024)</div>
         </div>
         <div id="content-right">
-            <div onclick="selectSection(this)" class="menu-burger side">Notícias</div>
-            <div onclick="selectSection(this)" class="menu-burger side">Avaliações</div>
+            <div class="container-aula ultima-noticia">
+                <h3>Últimas notícias</h3>
+                <strong>instruções para quem está abrindo os slides das aulas com os textos desconfigurados - 14/06/2024 19:31</strong> <br>
+                <par>Olá! Algumas pessoas estão abrindo os arquivos dos "slides das aulas" com os textos desses arquivos aparecendo ilegíveis e desconfigurados. Segue aqui algumas instruções para resolver isso, caso esse seja o teu caso.
+                    <br>
+                    1) Baixe os arquivos apenas pelo computador e não pelo celular. O celular irá desconfigurar os arquivos.
+                    <br>
+                    2)Mesmo se o problema continuar com você abrindo os arquivos pelo computador, isso significa que você não tem um programa de leitor de arquivos no formato PDF. Basta você fazer o dowload gratuito do programa "Adobe Acrobat DC". Esse arquivo vai abrir automaticamente todos os arquivos no formato PDF que você baixar no computador.
+                    <br>
+                    Era isso. Qualquer coisa, me avisem.<br>
+                    
+                    Abração!
+                </par>
+            </div>
+            <div id="noticias-avaliacoes">
+                <p onclick="selectSection(this)" class="menu-burger side">Estatística</p>
+                <div onclick="selectSection(this)" class="menu-burger side">Avaliações</div>
+            </div>
         </div>
     </div>
 

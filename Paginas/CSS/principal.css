@@ -227,7 +227,9 @@ header {
 
 .main-content-menu-item-img img {
     max-width: 100px; /* Adjust maximum width for responsive design */
-    height: auto; /* Keep image aspect ratio */
+    max-height: 300px; /* Keep image aspect ratio */
+    height: auto;
+    width: 50%;
     padding: var(--xxs-size);
 }
 
@@ -394,6 +396,7 @@ header {
 .config-perfil {
     max-width: 3vw;
     height: auto;
+    margin-right: 2vw;
 }
 
 
@@ -445,8 +448,6 @@ header {
 
 
 
-
-
  /* """REATIVO""" */
 
 @media (max-width: 600px) {
@@ -487,3 +488,12 @@ header {
 
 
  /* """REATIVO""" FIM */
+
+ .right {
+    position: absolute;
+    right: 0;
+    justify-content: right;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
