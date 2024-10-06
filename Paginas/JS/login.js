@@ -46,9 +46,8 @@ function changeColorScheme() {
     } else if (colorScheme == 3) {
         cores.href = "Paginas/CSS/Cores/coresPan.css";
         ifc.innerHTML = 'IFC - SIGAA - Tema Pan'
-    }
-     else {
-        cores.href = "Paginas/Css/coresWhite.css"
+    }else {
+        cores.href = "Paginas/CSS/coresWhite.css"
         ifc.innerHTML = 'IFC - SIGAA'
         colorScheme = 0;
     }
