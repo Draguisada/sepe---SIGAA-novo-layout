@@ -36,31 +36,36 @@ nav{
     margin-right:3%;
     padding: 0.5% 0 0.5% 0;
     border-radius: 0 0 10px 10px;
-    
-}
-
-.section:hover {
-    background-color: var(--cor-verde-destaque);
-    transition: 0.5s;
+    cursor:pointer;   
 }
 
 
-footer {
-    background-color:var(--cor-verde-header);
+.cadastro {
+    background-color:white;
     height:auto;
     border-radius: 10px 10px 0px 0px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    position: absolute;
+    position: relative;
     bottom: 0;
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2rem 1fr;
+    column-gap: 2vw;
 }
 
+.cadastro h2 {
+    margin: 1.5rem 0;
+    grid-column: 2;
+    text-align: center;
+    color: var(--cor-preto-padrao)
+}
 
 .footer-section{
     display:inline-block;
-    padding: 1vw 3vh;
+    /* padding: 1vw 1vh; */
+    grid-row: 2;
     
 }
 
@@ -68,12 +73,9 @@ footer {
     margin:0px;
     background-color:var(--cor-verde-acizentado);
     border-radius: 10px;
-    padding: min(2vh, 10vh) 10vw;
     transition: 0.5s;
-}
-
-.footer-section h3:hover{
-    background-color:var(--cor-verde-destaque);
+    text-align: center;
+    padding: 2vh 0;
 }
 
 .hidden {

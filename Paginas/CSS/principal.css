@@ -1,5 +1,9 @@
 @import url(padrao.css);
 
+
+
+
+
 header {
     margin-bottom: 2vh;
 }
@@ -25,14 +29,13 @@ header {
     
 }
 .nota-titulo {
-    background-color: var(--cor-verde-destaque);
+    background-color: var(--cor-verde-header);
     color: var(--cor-branco-padrao);
     border-radius: 10px 10px 0px 0px;
     padding: var(--xs-size);
 }
 
 .nota-titulo-professor {
-    background-color: var(--cor-verde-destaque);
     color: var(--cor-branco-padrao);
     border-radius: 0px 10px 0px 0px;
     font-size:var(--normal-text);
@@ -43,6 +46,7 @@ header {
 }
 .nota-conteudo-local {
     color: var(--cor-branco-padrao);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .nota-conteudo-nota-texto {
     color: var(--cor-verde-destaque);
@@ -235,11 +239,16 @@ header {
     text-decoration: underline;
 }
 
+.setinha {
+    position: relative;
+    left:0;
+    width: 1rem;
+    height: auto;
+}
 
 
 /* Acabou Main Content Menu*/
 #section-highschool {
-    display: none;
     flex-wrap: wrap;
     gap: 16px; /* Optional: Adjust the space between cards */
     justify-content: space-evenly; /* Centers the content horizontally */
@@ -252,7 +261,6 @@ header {
 }
 
 #section-technical {
-    display: none;
     flex-wrap: wrap;
     gap: 16px; /* Optional: Adjust the space between cards */
     justify-content: space-evenly; /* Centers the content horizontally */
@@ -260,7 +268,6 @@ header {
 }
 
 #section-opt {
-    display: none;
     flex-wrap: wrap;
     gap: 16px; /* Optional: Adjust the space between cards */
     justify-content: space-evenly; /* Centers the content horizontally */
@@ -433,3 +440,50 @@ header {
 #aovivo {
     transition: all 0.5s ease-in;
 }
+
+
+
+
+
+
+
+ /* """REATIVO""" */
+
+@media (max-width: 600px) {
+    .dados-institucionais-aluno-dados {
+        display: none;
+    }
+    
+    #main-content-info-news {
+        display: none;
+    }
+    .main-content-info-card {
+        width: 100%;
+    }
+
+    #tabela-atividades {
+        display: none;
+    }
+    .main-content-bar {
+        width: 100vw;
+    }
+}
+
+
+
+@media (min-width: 600px){
+    .dados-institucionais-aluno-dados {
+        display: block;
+    }
+
+    #main-content-info-news {
+        display: flex;
+    }
+
+
+
+}
+
+
+
+ /* """REATIVO""" FIM */

@@ -48,18 +48,17 @@ function mostrarPerfilAluno() {
 }
 
 
-function toggleVisibility(elementId) {
+function toggleVisibility(elementId, seta) {
+    var imagem = seta.firstElementChild
     var element = document.getElementById(elementId);
     if (element.style.display === "none" || element.style.display === "") {
         element.style.display = "flex";
+        imagem.src="Imagens/Icones/Seta-baixo.svg";
     } else {
         element.style.display = "none";
+        imagem.src="Imagens/Icones/Seta-cima.svg";
     }
 }
-
-toggleVisibility('section-highschool')
-toggleVisibility('section-technical')
-toggleVisibility('section-opt')
 
 
 // Função que retorna um intervalo de tempo aleatório em milissegundos

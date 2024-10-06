@@ -39,12 +39,19 @@
     --normal-text: 12px;
     }}
 
-    @media (max-width: 1280px){
-        :root{
-        font-size: 12px;
-        --titulo-text: 12px;
-        --normal-text: 10px;
-    }}
+@media (max-width: 1280px){
+    :root{
+    font-size: 12px;
+    --titulo-text: 12px;
+    --normal-text: 10px;
+}}
+
+@media (max-width: 600px){
+    :root{
+    font-size: 16px;
+    --titulo-text: 20px;
+    --normal-text: 16px;
+}}
 
 
 * {/* Todos as coisas estão com borda em baixo, e com a fonte Open sans, como deve ser */
@@ -90,6 +97,21 @@ table {
     width: 2vw;
 }
 
+footer#rodape {
+    padding: 1vh 0;
+    display: flex;
+    font-size: var(--normal-text);
+    width: 100%;
+    background-color: var(--cor-verde-destaque);
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer#rodape p {
+    margin: 0;
+}
 
 .header-sigaa-h1 {
     margin:0;
