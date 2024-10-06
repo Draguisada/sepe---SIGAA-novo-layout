@@ -26,5 +26,5 @@ let img_fundo = document.getElementsByClassName('img-fundo')
 
 
 for (i=0; i<img_fundo.length; i++) {
-    img_fundo[i].style.transform = "RotateZ(" + Math.ceil(Math.random() * 100) + "deg) Translate(" + getRandomIntInclusive(-25, 25) + "%)";
+    img_fundo[i].style.transform = "RotateZ(" + Math.ceil(Math.random() * 100) + "deg) Translate(" + getRandomIntInclusive(-25, 25) + "%, " + getRandomIntInclusive(-25, 25) + "%)";
 }
