@@ -229,6 +229,10 @@
     margin-top: var(--m-size);
 }
 
+.ultima-noticia h3 {
+    text-align: center;
+}
+
 .ultima-aula {
     background-color: var(--cor-cinza-padrao);
     color: var(--cor-preto-padrao);
