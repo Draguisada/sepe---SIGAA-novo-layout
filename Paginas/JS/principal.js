@@ -96,3 +96,24 @@ function mudaConteudo() {
 
 // Inicia a função mudaConteudo para começar a alterar o conteúdo periodicamente
 mudaConteudo();
+
+var colorScheme = 1
+
+function changeColorScheme() {
+    cores = document.getElementById('cores');
+    if (colorScheme == 1) {
+        cores.href = "CSS/Cores/coresTrans.css";
+    } else if (colorScheme == 2) {
+        cores.href = "CSS/Cores/coresNonBinary.css";
+    } else if (colorScheme == 4) {
+        cores.href = "CSS/Cores/coresSigClassico.css";
+    } else if (colorScheme == 3) {
+        cores.href = "CSS/Cores/coresPan.css";
+    }else {
+        cores.href = "CSS/coresWhite.css"
+        colorScheme = 0;
+    }
+
+
+    colorScheme++;
+}

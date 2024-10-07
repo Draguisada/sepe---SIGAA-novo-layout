@@ -99,7 +99,7 @@ header {
 
 
 .dados-institucionais-aluno-dados {
-    background-color: var(--cor-verde-destaque);
+    background-color: var(--cor-verde-header);
     list-style-type: none;
     width: fit-content;
     padding: 1rem;
@@ -115,7 +115,7 @@ header {
 }
 
 .imagem-aluno {
-    height: 7rem;
+    height: 7.5rem;
     border-radius:10px;
 }
 

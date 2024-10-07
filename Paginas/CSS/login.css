@@ -25,10 +25,10 @@ nav{
     margin-left:3%;
     margin-right:3%;
     padding: 0.5% 0 0.5% 0;
-
+    text-decoration: underline;
 }
 
-.section {
+.section{
     background-color: var(--cor-verde-acizentado);
     transition: 0.6s;
     width: 20%;
@@ -40,8 +40,12 @@ nav{
 }
 
 
+.section a, .section u {
+    text-decoration: none;
+}
+
+
 .cadastro {
-    background-color:white;
     height:auto;
     border-radius: 10px 10px 0px 0px;
     width: 100%;
@@ -65,7 +69,9 @@ footer#rodape {
     padding: 2vh 0;
     grid-column: 2;
     text-align: center;
-    color: var(--cor-preto-padrao)
+    color: var(--cor-preto-padrao);
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
 }
 
 .footer-section{
@@ -148,6 +154,7 @@ section {
     border: 0px transparent;
     cursor: pointer;
     font-size: 16px;
+    text-decoration: underline;
 }
 
 #portal-publico {
@@ -180,4 +187,5 @@ section {
 
 .layer img {
     margin-left: 5.5vw;
+    opacity: 0.5;
 }

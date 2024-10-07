@@ -89,7 +89,7 @@ footer#rodape {
     display: flex;
     font-size: var(--normal-text);
     width: 100%;
-    background-color: var(--cor-verde-destaque);
+    background-color: var(--cor-verde-header);
     height: fit-content;
     text-align: center;
     justify-content: center;
