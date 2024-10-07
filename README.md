@@ -5,5 +5,5 @@ Um projeto de pesquisa sobre UI e UX de sites/sistemas, e como isso afeta o usu�
 Foi reimaginado e recriado o Front-End das páginas mais utilizadas no sistema, sendo: Página de Login, principal e Disciplinas.
 
 
-Feito por: Bruno Tochetto, Antoni Sartoretto, Bruno Donati e Emmanuelle da Silva.
+Feito por: Bruno Tochetto, Antoni Sartoretto, Bruna Donati e Emmanuelle da Silva.
 Com orientação de: Caroline Guterres e Heitor Scalco Neto.
