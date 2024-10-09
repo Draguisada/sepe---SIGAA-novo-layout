@@ -61,41 +61,58 @@ function toggleVisibility(elementId, seta) {
 }
 
 
-// Função que retorna um intervalo de tempo aleatório em milissegundos
-function intervaloAleatorio(min, max) {
-    // Gera um número aleatório entre min e max, multiplica por 1000 para converter em milissegundos
-    return Math.floor(Math.random() * (max - min + 1) + min) * 1000;
-}
+        // Arrays de mensagens categorizadas em positivas, negativas e neutras
+        const noticias = [
+            'Não há notícias cadastradas',
+            'Reunião de pais às 18h no auditório. Contamos com a presença de todos para discutir o desempenho escolar e atividades futuras.',
+            'Palestra sobre saúde mental para os alunos do Ensino Médio às 14h, no auditório. Participação obrigatória.',
+            'SEPE aberta ao público das 9h às 12h. Venham prestigiar os projetos dos nossos alunos!.',
+            'Treinamento de vôlei às 8h no ginásio. Todos os interessados devem confirmar presença com o professor Isoton.',
+            'Lembramos que segunda-feira não haverá aulas devido ao feriado nacional. Aproveitem para descansar!',
+        ];
 
-// Função que altera o conteúdo do elemento HTML com id 'aovivo'
-function mudaConteudo() {
-    // Obtém o elemento HTML com id 'aovivo'
-    const aovivo = document.getElementById('aovivo');
-    
-    // Arrays de mensagens categorizadas em positivas, negativas e neutras
-    const noticias = [
-        'Não há notícias cadastradas',
-        'Reunião de pais às 18h no auditório. Contamos com a presença de todos para discutir o desempenho escolar e atividades futuras.',
-        'Palestra sobre saúde mental para os alunos do Ensino Médio às 14h, no auditório. Participação obrigatória.',
-        'SEPE aberta ao público das 9h às 12h. Venham prestigiar os projetos dos nossos alunos!.',
-        'Treinamento de vôlei às 8h no ginásio. Todos os interessados devem confirmar presença com o professor Isoton.',
-        'Lembramos que segunda-feira não haverá aulas devido ao feriado nacional. Aproveitem para descansar!',
-    ];
+        // Índice da notícia atual
+        let indiceAtual = 0;
 
-    // Combina todas as mensagens em um único array
-    
-    // Seleciona uma mensagem aleatória do array combinado
-    const mensagemAleatoria = noticias[Math.floor(Math.random() * noticias.length)];
+        // Obtém os elementos HTML
+        const aovivo = document.getElementById('aovivo');
+        const botaoEsquerda = document.getElementById('noticias-esquerda');
+        const botaoDireita = document.getElementById('noticias-direita');
 
-    // Atualiza o conteúdo do elemento 'aovivo' com a mensagem aleatória selecionada
-    aovivo.innerHTML = mensagemAleatoria;
+        // Função para exibir a notícia atual com base no índice
+        function exibeNoticia(indice) {
+            aovivo.innerHTML = noticias[indice];
+        }
 
-    // Chama a função mudaConteudo novamente após um intervalo aleatório entre 1 e 4 segundos
-    setTimeout(mudaConteudo, 8000);
-}
+        // Função para alternar automaticamente entre as notícias
+        function mudaConteudo() {
+            // Incrementa o índice de notícias, voltando ao início se chegar ao final
+            indiceAtual = (indiceAtual + 1) % noticias.length;
 
-// Inicia a função mudaConteudo para começar a alterar o conteúdo periodicamente
-mudaConteudo();
+            // Exibe a notícia atual
+            exibeNoticia(indiceAtual);
+
+            // Chama a função mudaConteudo novamente após 8 segundos
+            setTimeout(mudaConteudo, 8000);
+        }
+
+        // Adiciona o evento de clique ao botão para exibir a notícia anterior
+        botaoEsquerda.addEventListener('click', () => {
+            // Decrementa o índice e volta ao final se necessário
+            indiceAtual = (indiceAtual - 1 + noticias.length) % noticias.length;
+            exibeNoticia(indiceAtual);
+        });
+
+        // Adiciona o evento de clique ao botão para exibir a notícia próxima
+        botaoDireita.addEventListener('click', () => {
+            // Incrementa o índice e volta ao início se necessário
+            indiceAtual = (indiceAtual + 1) % noticias.length;
+            exibeNoticia(indiceAtual);
+        });
+
+        // Inicializa a primeira exibição e começa a alternância automática
+        exibeNoticia(indiceAtual);
+        mudaConteudo();
 
 var colorScheme = 1
 

@@ -497,3 +497,18 @@ header {
     box-sizing: border-box;
     align-items: center;
 }
+
+#noticias-esquerda, #noticias-direita {
+    position: absolute;
+    top: 50%; /* Vertically center the SVG */
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  #noticias-esquerda {
+    left: 0; /* Aligns to the inner left of the div */
+  }
+  
+  #noticias-direita {
+    right: 0; /* Aligns to the inner right of the div */
+  }
