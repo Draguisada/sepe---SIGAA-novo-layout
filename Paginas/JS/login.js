@@ -4,33 +4,45 @@ function getRandomIntInclusive(min, max) {
     return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
 }
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////////
+let footersec = document.getElementsByClassName('footer-section');
+let sections = document.getElementsByClassName('section');
 
 function selectSection(elem) {
-    let sections = document.getElementsByClassName('section');
-
     for (i=0; i<sections.length; i++) {
         sections[i].classList.remove('selected')
     }
 
     elem.classList.add('selected')
+
+    if (!(sections[0].classList.contains('selected'))) {
+        console.log('Não primeiro');
+
+        footersec[0].style.gridColumn = 2;
+        footersec[1].style.display = 'none';
+        footersec[2].style.display = 'none';
+    } else {
+        footersec[0].style.gridColumn = 1;
+        footersec[1].style.display = 'inline-block';
+        footersec[2].style.display = 'inline-block';
+    }
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
 function naoPossuiCadastro() {
     let hidden = document.getElementsByClassName('cadastro')
     hidden[0].classList.toggle('hidden')
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
 let img_fundo = document.getElementsByClassName('img-fundo')
-
-
-
 for (i=0; i<img_fundo.length; i++) {
     img_fundo[i].style.transform = "RotateZ(" + Math.ceil(Math.random() * 100) + "deg) Translate(" + getRandomIntInclusive(-25, 25) + "%, " + getRandomIntInclusive(-25, 25) + "%)";
+    console.log('Elemento translatado')
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
 var colorScheme = 1
-
 function changeColorScheme() {
     cores = document.getElementById('cores');
     ifc = document.getElementById('nome-ifc');
@@ -54,4 +66,11 @@ function changeColorScheme() {
 
 
     colorScheme++;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+function normal(elem) {
+    elem.style.transform = 'rotateZ(0deg) translate(0, 0)';
+    elem.style.opacity = '1';
+    console.log("normal")
 }

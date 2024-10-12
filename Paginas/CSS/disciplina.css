@@ -263,6 +263,10 @@
     text-decoration: underline;
 }
 
+.downloadable img {
+    width: fit-content;
+}
+
 .aula-anterior {
     color: var(--cor-branco-padrao);
     background-color: var(--cor-verde-header);

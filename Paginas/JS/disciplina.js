@@ -1,10 +1,15 @@
-//  Usando esse como teste pra ver como fica com nomes de diferentes tamanhos 
+title = document.querySelector('title');
+
 function troca(elem) {
     if (elem.innerHTML === 'Biologia'){
-    elem.innerHTML = 'Língua portuguesa e Literatura'
+        materia = 'Língua portuguesa e Literatura'
+        elem.innerHTML = materia
+        title.innerHTML = 'SIGAA - ' + materia
     }
     else {
-    elem.innerHTML = 'Biologia'
+        materia = 'Biologia'
+        elem.innerHTML = materia
+        title.innerHTML = 'SIGAA - ' + materia
     }
 }
 

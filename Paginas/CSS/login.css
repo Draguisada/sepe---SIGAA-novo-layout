@@ -11,6 +11,10 @@ a {
     color: var(--cor-branco-padrao);
 }
 
+nav, header, #portal-publico, #container {
+    z-index: 1;
+}
+
 nav{
     height:auto;
     border-radius: 10px 10px 0px 0px;
@@ -177,15 +181,34 @@ section {
 #imagens-fundo {
     opacity: 50%;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 90%;
     display: flex;
     flex-direction: column-reverse;
-    gap: 10%;
-    z-index: -10;
+    gap: 10vh;
+    z-index: 0;
+    /* flex-wrap: wrap; */
 }
 
-.layer img {
+.img-fundo {
     margin-left: 5.5vw;
     opacity: 0.5;
+    transition: 1s;
+}
+
+
+
+
+
+/* Reatividade */
+
+@media (max-width: 1600px) {
+    .layer:nth-of-type(3) {
+        display: none;
+    }
+}
+@media (max-width: 400px) {
+    .layer:nth-of-type(2) {
+        display: none;
+    }
 }
