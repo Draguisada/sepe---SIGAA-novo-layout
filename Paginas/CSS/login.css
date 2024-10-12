@@ -194,6 +194,7 @@ section {
     margin-left: 5.5vw;
     opacity: 0.5;
     transition: 1s;
+    animation-timing-function: ease-in-out;
 }
 
 
