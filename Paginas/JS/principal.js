@@ -1,3 +1,7 @@
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
 function colorizeNotas() {
     const notaElements = document.querySelectorAll('.nota-conteudo-nota-valor');
 
@@ -19,7 +23,20 @@ function colorizeNotas() {
     });
 }
 
+
+
+
+notas = document.getElementsByClassName('nota');
+
+function randomizeNotas(min = 5, rand = 4) {
+    for(i=0;i<notas.length;i++) {
+        notas[i].innerHTML = getRandomInt(rand) + min + getRandomInt(9)/10
+    }
+}
+
+randomizeNotas();
 colorizeNotas();
+
 
 function mostrarPerfilAluno() {
     let perfil_estudante = document.getElementById('perfil-estudante');
@@ -134,3 +151,46 @@ function changeColorScheme() {
 
     colorScheme++;
 }
+
+
+primeiros = document.getElementsByClassName('primeiroano');
+segundos = document.getElementsByClassName('segundoano');
+terceiros = document.getElementsByClassName('terceiroano');
+tecnico = document.getElementsByClassName('tecnico')
+
+function turmaDiferente(turma, ano) {
+    for (i=0;i<primeiros.length;i++) {
+        primeiros[i].style.display= 'None';
+    }
+    for (i=0;i<segundos.length;i++) {
+        segundos[i].style.display= 'None';
+    }
+    for (i=0;i<terceiros.length;i++) {
+        terceiros[i].style.display= 'None';
+    }
+    for (i=0;i<tecnico.length;i++) {
+        tecnico[i].style.display= 'None';
+    }
+
+    if (ano == 1) {
+        var ano = primeiros;
+    } else if (ano == 2) {
+        var ano = segundos;
+    } else if (ano == 3) {
+        var ano = terceiros;
+    } else {
+        console.log('ANO NÃO CORESPONDENTE, DIGITE UM DÍGITO DE 1 ATÉ 3');
+    }
+
+
+    for (i=0;i<ano.length;i++) {
+        if (ano[i].classList.contains(turma)) {
+            ano[i].style.display = 'block';
+        }
+    }
+
+}
+
+
+
+turmaDiferente("info", 1);
