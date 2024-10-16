@@ -38,7 +38,6 @@ function naoPossuiCadastro() {
 let img_fundo = document.getElementsByClassName('img-fundo')
 for (i=0; i<img_fundo.length; i++) {
     img_fundo[i].style.transform = "RotateZ(" + Math.ceil(Math.random() * 100) + "deg) Translate(" + getRandomIntInclusive(-25, 25) + "%, " + getRandomIntInclusive(-25, 25) + "%)";
-    console.log('Elemento translatado')
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -69,8 +68,22 @@ function changeColorScheme() {
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
-function normal(elem) {
+function resetNormal(elem) {
+    elem.style.transition = '18s';
+    elem.style.opacity = '0.5';
+    elem.style.transform = "RotateZ(" + Math.ceil(Math.random() * 100) + "deg) Translate(" + getRandomIntInclusive(-25, 25) + "%, " + getRandomIntInclusive(-25, 25) + "%)";
+}
+
+function delay(ms) {
+    ms *= 1000;
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function normal(elem) {
+    elem.style.transition = '1.5s';
     elem.style.transform = 'rotateZ(0deg) translate(0, 0)';
     elem.style.opacity = '1';
-    console.log("normal")
+    await delay(10*(Math.random() + 0.5));
+    resetNormal(elem);
+    
 }

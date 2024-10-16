@@ -193,7 +193,7 @@ section {
 .img-fundo {
     margin-left: 5.5vw;
     opacity: 0.5;
-    transition: 1s;
+    transition: 1.5s;
     animation-timing-function: ease-in-out;
 }
 

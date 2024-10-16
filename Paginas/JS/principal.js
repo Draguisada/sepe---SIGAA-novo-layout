@@ -78,58 +78,58 @@ function toggleVisibility(elementId, seta) {
 }
 
 
-        // Arrays de mensagens categorizadas em positivas, negativas e neutras
-        const noticias = [
-            'Não há notícias cadastradas',
-            'Reunião de pais às 18h no auditório. Contamos com a presença de todos para discutir o desempenho escolar e atividades futuras.',
-            'Palestra sobre saúde mental para os alunos do Ensino Médio às 14h, no auditório. Participação obrigatória.',
-            'SEPE aberta ao público das 9h às 12h. Venham prestigiar os projetos dos nossos alunos!.',
-            'Treinamento de vôlei às 8h no ginásio. Todos os interessados devem confirmar presença com o professor Isoton.',
-            'Lembramos que segunda-feira não haverá aulas devido ao feriado nacional. Aproveitem para descansar!',
-        ];
+// Arrays de mensagens categorizadas em positivas, negativas e neutras
+const noticias = [
+    'Não há notícias cadastradas',
+    'Reunião de pais às 18h no auditório. Contamos com a presença de todos para discutir o desempenho escolar e atividades futuras.',
+    'Palestra sobre saúde mental para os alunos do Ensino Médio às 14h, no auditório. Participação obrigatória.',
+    'SEPE aberta ao público das 9h às 12h. Venham prestigiar os projetos dos nossos alunos!.',
+    'Treinamento de vôlei às 8h no ginásio. Todos os interessados devem confirmar presença com o professor Isoton.',
+    'Lembramos que segunda-feira não haverá aulas devido ao feriado nacional. Aproveitem para descansar!',
+];
 
-        // Índice da notícia atual
-        let indiceAtual = 0;
+// Índice da notícia atual
+let indiceAtual = 0;
 
-        // Obtém os elementos HTML
-        const aovivo = document.getElementById('aovivo');
-        const botaoEsquerda = document.getElementById('noticias-esquerda');
-        const botaoDireita = document.getElementById('noticias-direita');
+// Obtém os elementos HTML
+const aovivo = document.getElementById('aovivo');
+const botaoEsquerda = document.getElementById('noticias-esquerda');
+const botaoDireita = document.getElementById('noticias-direita');
 
-        // Função para exibir a notícia atual com base no índice
-        function exibeNoticia(indice) {
-            aovivo.innerHTML = noticias[indice];
-        }
+// Função para exibir a notícia atual com base no índice
+function exibeNoticia(indice) {
+    aovivo.innerHTML = noticias[indice];
+}
 
-        // Função para alternar automaticamente entre as notícias
-        function mudaConteudo() {
-            // Incrementa o índice de notícias, voltando ao início se chegar ao final
-            indiceAtual = (indiceAtual + 1) % noticias.length;
+// Função para alternar automaticamente entre as notícias
+function mudaConteudo() {
+    // Incrementa o índice de notícias, voltando ao início se chegar ao final
+    indiceAtual = (indiceAtual + 1) % noticias.length;
 
-            // Exibe a notícia atual
-            exibeNoticia(indiceAtual);
+    // Exibe a notícia atual
+    exibeNoticia(indiceAtual);
 
-            // Chama a função mudaConteudo novamente após 8 segundos
-            setTimeout(mudaConteudo, 8000);
-        }
+    // Chama a função mudaConteudo novamente após 8 segundos
+    setTimeout(mudaConteudo, 8000);
+}
 
-        // Adiciona o evento de clique ao botão para exibir a notícia anterior
-        botaoEsquerda.addEventListener('click', () => {
-            // Decrementa o índice e volta ao final se necessário
-            indiceAtual = (indiceAtual - 1 + noticias.length) % noticias.length;
-            exibeNoticia(indiceAtual);
-        });
+// Adiciona o evento de clique ao botão para exibir a notícia anterior
+botaoEsquerda.addEventListener('click', () => {
+    // Decrementa o índice e volta ao final se necessário
+    indiceAtual = (indiceAtual - 1 + noticias.length) % noticias.length;
+    exibeNoticia(indiceAtual);
+});
 
-        // Adiciona o evento de clique ao botão para exibir a notícia próxima
-        botaoDireita.addEventListener('click', () => {
-            // Incrementa o índice e volta ao início se necessário
-            indiceAtual = (indiceAtual + 1) % noticias.length;
-            exibeNoticia(indiceAtual);
-        });
+// Adiciona o evento de clique ao botão para exibir a notícia próxima
+botaoDireita.addEventListener('click', () => {
+    // Incrementa o índice e volta ao início se necessário
+    indiceAtual = (indiceAtual + 1) % noticias.length;
+    exibeNoticia(indiceAtual);
+});
 
-        // Inicializa a primeira exibição e começa a alternância automática
-        exibeNoticia(indiceAtual);
-        mudaConteudo();
+// Inicializa a primeira exibição e começa a alternância automática
+exibeNoticia(indiceAtual);
+mudaConteudo();
 
 var colorScheme = 1
 
