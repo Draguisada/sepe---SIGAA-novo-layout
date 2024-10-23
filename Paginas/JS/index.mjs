@@ -1,10 +1,10 @@
-import puppeteer from '/puppeteer';
+import puppeteer from './puppeteer';
 
 var turma = 'info';
 var ano = 1;
 
 
-
+export function sla() {
 (async () => {
     // Launch the browser and open a new blank page
     const browser = await puppeteer.launch({
@@ -70,6 +70,9 @@ var ano = 1;
 
     // await browser.close();
 })();
+}
+
+sla();
 
 export function turmaAno() {
     return 'info', 1;

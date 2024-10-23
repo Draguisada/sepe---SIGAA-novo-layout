@@ -1,4 +1,4 @@
-import { turmaAno } from './index.mjs';
+// import { turmaAno } from './index.mjs';
 
 
 function getRandomInt(max) {
