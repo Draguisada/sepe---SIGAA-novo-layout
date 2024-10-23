@@ -1,3 +1,6 @@
+import { turmaAno } from './index.mjs';
+
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -190,7 +193,5 @@ function turmaDiferente(turma, ano) {
     }
 
 }
-
-
 
 turmaDiferente("info", 1);
