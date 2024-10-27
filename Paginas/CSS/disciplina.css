@@ -289,9 +289,23 @@
     margin-right: 2vw;
 }
 
-footer#rodape {
-    position: absolute;
-    bottom: 0;
+.conteudo-estatistica-botao {
+    background-color: var(--cor-cinza-padrao);
+    color: var(--cor-preto-padrao);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.conteudo-avaliacoes {
+    background-color: var(--cor-cinza-padrao);
+    color: var(--cor-preto-padrao);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
 
 #trocar-disciplina {

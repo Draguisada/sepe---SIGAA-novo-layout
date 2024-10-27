@@ -15,20 +15,25 @@ function troca(elem) {
 
 
 
-function selectSection(elem) {
-
+function selectSection(elem, contentClass) {
     if (elem.classList.contains('selected')) {
         elem.classList.remove('selected');
-        return 0;
-    } 
-
-    let sections = document.getElementsByClassName('menu-burger');
-
-    for (i=0; i<sections.length; i++) {
-        sections[i].classList.remove('selected')
+        document.querySelector(`.${contentClass}`).style.display = 'none';
+        return;
     }
 
-    elem.classList.add('selected')
+    let sections = document.getElementsByClassName('menu-burger');
+    for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove('selected');
+    }
+
+    let contentSections = document.querySelectorAll('.conteudo-estatistica, .conteudo-avaliacoes');
+    contentSections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    elem.classList.add('selected');
+    document.querySelector(`.${contentClass}`).style.display = 'block';
 }
 
 function naoPossuiCadastro() {
