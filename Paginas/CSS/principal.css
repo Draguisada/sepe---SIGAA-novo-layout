@@ -103,6 +103,7 @@ header {
     width: fit-content;
     padding: 1rem;
     border-radius:10px;
+    user-select: none;
 }   
 
 .dados-institucionais-aluno-imagem {
@@ -418,6 +419,10 @@ color: var(--cor-preto-padrao);
 
 .main-content-menu-item-desc {
     text-align: center;
+    font-weight: bold;
+}
+
+.tabela-atividade-desc-nome {
     font-weight: bold;
 }
 

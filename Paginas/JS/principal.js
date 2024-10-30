@@ -130,17 +130,15 @@ botaoDireita.addEventListener('click', () => {
 // Inicializa a primeira exibição e começa a alternância automática
 exibeNoticia(indiceAtual);
 mudaConteudo();
-
+const cores = document.getElementById('cores');
 var colorScheme = 1
 
-function changeColorScheme() {
-    cores = document.getElementById('cores');
+function changeColorSchemeGay() {
+    
     if (colorScheme == 1) {
         cores.href = "CSS/Cores/coresTrans.css";
     } else if (colorScheme == 2) {
         cores.href = "CSS/Cores/coresNonBinary.css";
-    } else if (colorScheme == 4) {
-        cores.href = "CSS/Cores/coresSigClassico.css";
     } else if (colorScheme == 3) {
         cores.href = "CSS/Cores/coresPan.css";
     }else {
@@ -148,8 +146,26 @@ function changeColorScheme() {
         colorScheme = 0;
     }
 
-
     colorScheme++;
+}
+
+function changeColorScheme() {
+    
+    if (colorScheme == 1) {
+        cores.href = "CSS/Cores/coresSigClassico.css";
+        colorScheme = 0;
+        localStorage.setItem('visSig', 'True')
+    } else {
+        cores.href = 'CSS/coresWhite.css';
+        colorScheme=1;
+        localStorage.setItem('visSig', 'False')
+    }
+
+}
+
+
+if (localStorage.visSig == 'True') {
+    changeColorScheme()
 }
 
 

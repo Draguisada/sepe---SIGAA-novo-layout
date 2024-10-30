@@ -114,7 +114,7 @@ section {
     position: relative;
     height:40vh;
     width: 30vw;
-    background-color: var(--cor-verde-acizentado);
+    background-color: color-mix(in srgb, var(--cor-verde-acizentado), transparent 10%);
     border-radius: 10px;
     margin: 10vh 0;
 }

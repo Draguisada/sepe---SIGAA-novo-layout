@@ -15,10 +15,11 @@
     /* Set specific widths for each section */
     #content-left {
         width: 25%; /* Occupies 25% of the screen */
+        min-width: 13rem;
     }
 
-    #content-mid {
-        width: 50%; /* Occupies 50% of the screen */
+    #content-mid {/* Occupies 50% of the screen */
+        min-width: 40rem;
     }
 
     #content-right {
@@ -139,6 +140,7 @@
     display:grid;
     margin:10px auto; /* AQUI Ó*/
     width: 18vw;
+    min-width: 10rem;
 
     align-items: center;
     text-align: center;
@@ -237,7 +239,10 @@
     background-color: var(--cor-cinza-padrao);
     color: var(--cor-preto-padrao);
     float: right;
-    
+}
+
+.ultima-aula > h3 {
+    text-align: center;
 }
 
 .local-download {
@@ -284,7 +289,7 @@
 }
 
 .config-perfil {
-    max-width: 3vw;
+    max-width: 2.5vw;
     height: auto;
     margin-right: 2vw;
 }
@@ -325,4 +330,12 @@
     display: flex;
     box-sizing: border-box;
     align-items: center;
+    gap: 1vw;
+}
+
+
+@media (max-width: 800px) {
+    #content-right {
+        display: none;
+    }
 }
