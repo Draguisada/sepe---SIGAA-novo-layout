@@ -71,7 +71,7 @@ footer#rodape {
 
 .cadastro h2 {
     padding: 2vh 0;
-    grid-column: 2;
+    grid-column: 1/ 4;
     text-align: center;
     color: var(--cor-preto-padrao);
     background-color: rgba(255, 255, 255, 0.8);
@@ -114,6 +114,7 @@ section {
     position: relative;
     height:40vh;
     width: 30vw;
+    min-width: 300px;
     background-color: color-mix(in srgb, var(--cor-verde-acizentado), transparent 10%);
     border-radius: 10px;
     margin: 10vh 0;
@@ -138,6 +139,7 @@ section {
     position: relative;
     /* padding: 1vh 8vw; */
     width: 24vw;
+    min-width: 240px;
     height: 4vh;
     border-radius: 10px;
     border:0px;
@@ -211,5 +213,30 @@ section {
 @media (max-width: 400px) {
     .layer:nth-of-type(2) {
         display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .section {
+        display: none;
+        width: 80%;
+        padding: 2% 0;
+        border-radius: 0;
+        transition: 0s;
+    }
+    .section:last-child {
+        border-radius: 0 0 10px 10px;
+    }
+    .section.selected {
+        display:block;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        padding: 2% 0;
+        order: -1;
+    }
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }

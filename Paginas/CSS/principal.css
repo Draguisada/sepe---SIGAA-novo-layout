@@ -15,7 +15,10 @@ header {
 #side-menu {
     float: right;
     width: 25%;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /* card pequeno */
 .nota-card {
@@ -192,7 +195,7 @@ color: var(--cor-preto-padrao);
     background-color: var(--cor-cinza-padrao);
     font-size: var(--titulo-text);
     color: var(--cor-verde-destaque);
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     margin: 10px 0;
     padding: 10px;
     font-weight: bold;
@@ -260,28 +263,28 @@ color: var(--cor-preto-padrao);
 /* Acabou Main Content Menu*/
 #section-highschool {
     flex-wrap: wrap;
-    gap: 16px; /* Optional: Adjust the space between cards */
     justify-content: space-evenly; /* Centers the content horizontally */
-    margin-left:2vw;
+    margin-left:1vw;
 }
+
+#section-highschool, #section-technical, #section-opt {
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Centers the content horizontally */
+    margin-left:1vw;
+
+
+    margin-left: 6vw;
+    column-gap: 2%;
+    row-gap: 1vh;
+}
+
 .subject-type {
     flex: 1 1 100px; /* Allows each card to grow/shrink while maintaining a minimum width */
-    max-width: 275px; /* Optional: Set a maximum width */
+    max-width: fit-content; /* Optional: Set a maximum width */
     box-sizing: border-box;
 }
 
-#section-technical {
-    flex-wrap: wrap;
-    gap: 16px; /* Optional: Adjust the space between cards */
-    justify-content: space-evenly; /* Centers the content horizontally */
-    margin-left:2vw;
-}
-
 #section-opt {
-    flex-wrap: wrap;
-    gap: 16px; /* Optional: Adjust the space between cards */
-    justify-content: space-evenly; /* Centers the content horizontally */
-    margin-left:2vw;
     margin-bottom: 3vh;
 }
 
@@ -376,6 +379,8 @@ color: var(--cor-preto-padrao);
     border-radius: 10px;
     margin: 1%;
     color: rgb(0, 0, 0);
+    width: 23vw;
+    /* justify-self: center; */
 }
 
 #tabela-atividades-cabecalho, .tabela-atividades-atividade {
@@ -480,23 +485,27 @@ color: var(--cor-preto-padrao);
     .main-content-bar {
         width: 100vw;
     }
+
+    #side-menu {
+        display: none;
+    }
 }
 
 
 
-@media (min-width: 600px){
-    .dados-institucionais-aluno-dados {
-        display: block;
+@media (max-width: 850px) {
+    /* .dados-institucionais-aluno {
+        display: none;
+    } */
+
+    #perfil-estudante {
+        padding: 0;
     }
 
-    #main-content-info-news {
-        display: flex;
+    #main-content {
+        width: 70%;
     }
-
-
-
 }
-
 
 
  /* """REATIVO""" FIM */
@@ -526,3 +535,16 @@ color: var(--cor-preto-padrao);
   #noticias-direita {
     right: 0; /* Aligns to the inner right of the div */
   }
+
+@media (min-width: 1080px) {
+    #section-highschool, #section-technical, #section-opt {
+        margin-left: 6vw;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    #section-highschool {
+        margin-left: 0;
+        column-gap: 0;
+    }
+}

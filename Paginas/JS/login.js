@@ -7,24 +7,56 @@ function getRandomIntInclusive(min, max) {
 //////////////////////////////////////////////////////////////////////////////////////////////////
 let footersec = document.getElementsByClassName('footer-section');
 let sections = document.getElementsByClassName('section');
+let aberto = 0
+
 
 function selectSection(elem) {
-    for (i=0; i<sections.length; i++) {
-        sections[i].classList.remove('selected')
-    }
+    if (window.innerWidth > 600){
+        for (i=0; i<sections.length; i++) {
+            sections[i].classList.remove('selected')
+        }
 
-    elem.classList.add('selected')
+        elem.classList.add('selected')
 
-    if (!(sections[0].classList.contains('selected'))) {
-        console.log('Não primeiro');
+        if (!(sections[0].classList.contains('selected'))) {
 
-        footersec[0].style.gridColumn = 2;
-        footersec[1].style.display = 'none';
-        footersec[2].style.display = 'none';
-    } else {
-        footersec[0].style.gridColumn = 1;
-        footersec[1].style.display = 'inline-block';
-        footersec[2].style.display = 'inline-block';
+            footersec[0].style.gridColumn = 2;
+            footersec[1].style.display = 'none';
+            footersec[2].style.display = 'none';
+        } else {
+            footersec[0].style.gridColumn = 1;
+            footersec[1].style.display = 'inline-block';
+            footersec[2].style.display = 'inline-block';
+        }
+    } else if (window.innerWidth <= 600) {
+        if (!aberto) {
+            for(i=0;i<sections.length;i++) {
+                sections[i].style.display = 'block';
+            }
+            aberto = 1;
+        } else if (elem.classList.contains('selected') || aberto) {
+            for(i=0;i<sections.length;i++) {
+                sections[i].style.display = 'none';
+            }
+            elem.style.display = 'block';
+            aberto = 0;
+        }
+        for (i=0; i<sections.length; i++) {
+            sections[i].classList.remove('selected')
+        }
+
+        elem.classList.add('selected')
+
+        if (!(sections[0].classList.contains('selected'))) {
+
+            footersec[0].style.gridColumn = 2;
+            footersec[1].style.display = 'none';
+            footersec[2].style.display = 'none';
+        } else {
+            footersec[0].style.gridColumn = 1;
+            footersec[1].style.display = 'inline-block';
+            footersec[2].style.display = 'inline-block';
+        }
     }
 }
 
