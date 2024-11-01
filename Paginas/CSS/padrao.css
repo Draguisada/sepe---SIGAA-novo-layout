@@ -15,26 +15,7 @@
     /* Tamanho Fim */
 }
 
-@media (max-width: 1660px) {
-    :root{
-    font-size: 16px;
-    --titulo-text: 16px;
-    --normal-text: 12px;
-    }}
 
-@media (max-width: 1280px){
-    :root{
-    font-size: 12px;
-    --titulo-text: 12px;
-    --normal-text: 10px;
-}}
-
-@media (max-width: 600px){
-    :root{
-    font-size: 16px;
-    --titulo-text: 20px;
-    --normal-text: 16px;
-}}
 
 
 * {/* Todos as coisas estão com borda em baixo, e com a fonte Open sans, como deve ser */
@@ -45,6 +26,10 @@
 body {
     color: var(--cor-branco-padrao);
     border-radius: 0 0 10px 10px;
+}
+
+#main {
+    min-height: 100vh;
 }
 
 a{
@@ -65,6 +50,7 @@ header{ /*Todo header é igual.*/
     justify-content: center;
     align-items: center;
     height: 7vh;
+    width: 100%;
 }
 
 table {
@@ -120,3 +106,42 @@ body {
 
 
 /* Fim header IFC */
+
+
+@media (max-width: 1660px) {
+    :root{
+    font-size: 16px;
+    --titulo-text: 16px;
+    --normal-text: 12px;
+    }}
+
+@media (max-width: 1280px){
+    :root{
+    font-size: 12px;
+    --titulo-text: 12px;
+    --normal-text: 10px;
+}}
+
+@media (max-width: 600px){
+    :root{
+    font-size: 16px;
+    --titulo-text: 20px;
+    --normal-text: 16px;
+    }
+    footer#rodape {
+        width: 98vw;
+    }
+
+
+}
+
+@media (max-width: 380px) {
+    :root{
+        font-size: 14px;
+    --titulo-text: 16px;
+    --normal-text: 14px;
+    }
+    header{
+        height: 10vh;
+    }
+}

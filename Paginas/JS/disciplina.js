@@ -59,9 +59,16 @@ function changeColorSchemeGay() {
 
     colorScheme++;
 }
-
+const all = document.querySelectorAll('*')
 function changeColorScheme() {
-    
+    for(i=0;i<all.length;i++) {
+        all[i].style.transition = "0.8s";
+    }
+    setInterval(function () {
+        for(i=0;i<all.length;i++) {
+            all[i].style.transition = "0s";
+        }
+    }, 2000)
     if (colorScheme == 1) {
         cores.href = "CSS/Cores/coresSigClassico.css";
         colorScheme = 0;
@@ -71,10 +78,47 @@ function changeColorScheme() {
         colorScheme=1;
         localStorage.setItem('visSig', 'False')
     }
-
+    
 }
 
 
 if (localStorage.visSig == 'True') {
     changeColorScheme()
+}
+
+const sairIcone = document.getElementsByClassName('sair');
+
+function mudarPagina(entrada) {
+    const content_mid = document.getElementById('content-mid');
+    const content_left = document.getElementById('content-left');
+    const content_right = document.getElementById('content-right');
+    const classRight = document.getElementsByClassName('right');
+
+    if (entrada) {
+        content_mid.style.display = 'inline-block';
+        sairIcone[0].style.display = 'block';
+        sairIcone[1].style.display = 'none';
+
+        classRight[0].style.top = '0';
+        document.getElementById('trocar-disciplina').style.display = "none";
+        classRight[0].style.justifyContent = 'right';
+
+        content_left.style.display = 'none';
+        content_right.style.display = 'none';
+
+    } else {
+        content_mid.style.display = 'none';
+        sairIcone[0].style.display = 'none';
+        sairIcone[1].style.display = 'block';
+        
+        content_left.style.display = 'inline-block';
+        content_right.style.display = 'inline-block';
+
+        classRight[0].style.top = '';
+        document.getElementById('trocar-disciplina').style.display = "block";
+        classRight[0].style.justifyContent = 'space-evenly';
+        
+
+
+    }
 }

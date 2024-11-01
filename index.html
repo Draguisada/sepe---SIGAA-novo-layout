@@ -9,6 +9,7 @@
     <title>SIGAA - Login</title>
 </head>
 <body>
+    <div id="main">
     <header>
         <a href="#" id="if-logo" onclick="changeColorScheme()"><img src="Paginas/Imagens/Icones/IF-Logo.png" alt="Logo dos Institutos Federais" ></a>
         <table>
@@ -24,10 +25,10 @@
     </header>
 
     <nav>
-        <div onclick='selectSection(this)' class="section selected"><strong>SIGAA</strong> <br> <u>Acadêmico</u></div>
-        <div onclick='selectSection(this)' class="section"><a href="#"><strong>SIPAC</strong> <br> <u>Administrativo</u></a></div>
-        <div onclick='selectSection(this)' class="section"><a href="#"><strong>SIGRH</strong> <br> <u>Recursos Humanos</u></a></div>
-        <div onclick='selectSection(this)' class="section"><a href="#"><strong>SIGAdmin</strong> <br> <u>Administração e Comunicação</u></a></div>
+        <div onclick='selectSection(this, 0)' class="section selected"><a href="#"><strong>SIGAA</strong> <br> <u>Acadêmico</u></a></div>
+        <div onclick='selectSection(this, 1)' class="section"><a href="#"><strong>SIPAC</strong> <br> <u>Administrativo</u></a></div>
+        <div onclick='selectSection(this, 2)' class="section"><a href="#"><strong>SIGRH</strong> <br> <u>Recursos Humanos</u></a></div>
+        <div onclick='selectSection(this, 3)' class="section"><a href="#"><strong>SIGAdmin</strong> <br> <u>Administração e Comunicação</u></a></div>
     </nav>
 
 
@@ -56,7 +57,7 @@
 
     </section>
 
-    <div id="imagens-fundo">
+    <section id="imagens-fundo">
         <div class="layer">
             <img class="img-fundo" onmouseenter="normal(this)" src="Paginas/Imagens/Login/Molecula.svg" >
             <img class="img-fundo" onmouseenter="normal(this)" src="Paginas/Imagens/Login/Arvore.svg">
@@ -87,19 +88,19 @@
             <img class="img-fundo" onmouseenter="normal(this)" src="Paginas/Imagens/Login/Abobora.svg">
             <img class="img-fundo" onmouseenter="normal(this)" src="Paginas/Imagens/Login/Arvore.svg">
         </div>
-    </div>
+    </section>
 
 
-    <div class="hidden cadastro">
+    <section class="hidden cadastro">
         <h2>Não possui cadastro como:</h2>
         <div class="footer-section"><a href="#"><h3>Servidor</h2></a></div>
         <div class="footer-section"><a href="#"><h3>Aluno</h2></a></div>
         <div class="footer-section"><a href="#"><h3>Familiares</h2></a></div>
         </div>
-
-        <footer id="rodape">
-            <p>Trabalho SEPE 2024 - IFC - Campus Concórdia</p>
-        </footer>
+    </main>
+    <footer id="rodape">
+        <p>Trabalho SEPE 2024 - IFC - Campus Concórdia</p>
+    </footer>
 </body>
 <script src="Paginas/JS/login.js"></script>
 </html>

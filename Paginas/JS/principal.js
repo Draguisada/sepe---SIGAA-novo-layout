@@ -149,8 +149,16 @@ function changeColorSchemeGay() {
     colorScheme++;
 }
 
+const all = document.querySelectorAll('*')
 function changeColorScheme() {
-    
+    for(i=0;i<all.length;i++) {
+        all[i].style.transition = "0.8s";
+    }
+    setInterval(function () {
+        for(i=0;i<all.length;i++) {
+            all[i].style.transition = "0s";
+        }
+    }, 2000) 
     if (colorScheme == 1) {
         cores.href = "CSS/Cores/coresSigClassico.css";
         colorScheme = 0;

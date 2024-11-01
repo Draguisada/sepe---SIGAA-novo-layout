@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <div style="min-height: calc(100vh);">
+    <div id="main">
         <!-- Header default IFC - SIGAA-->
         <header>
             <a href="../index.html" id="if-logo"><img src="Imagens/Icones/IF-Logo.png" alt="Logo dos Institutos Federais" ></a>
@@ -26,12 +26,13 @@
             </table>
             <div class="right">
                 <p id="trocar-disciplina" onclick="changeColorScheme()">Trocar de disciplina</p>
-                <a href="principal.html"><img class="config-perfil" src="Imagens/Icones/Sair.svg" alt="Sair da conta"></a>
+                <a href="principal.html" class="sair"><img class="config-perfil" src="Imagens/Icones/Sair.svg" alt="Sair da conta"></a>
+                <a href="principal.html" class="sair"><img class="config-perfil" src="Imagens/Icones/Sair - preto.svg" alt="Sair da conta"></a>
             </div>
         </header>
         <!-- header fim-->
-        <div id="content-full">
-            <div id="content-left">
+        <section id="content-full">
+            <section id="content-left">
                 <div id="nome-materia">
                     <h2 onclick="troca(this)">Biologia</h2>
                 </div>
@@ -50,8 +51,8 @@
             
                 </div>
 
-            </div>
-            <div id="content-mid">
+            </section>
+            <section id="content-mid">
                 <div id="menu-burger-config">
                     <p onclick="selectSection(this)" class="menu-burger">Turma</p>
                     <p onclick="selectSection(this)" class="menu-burger">Aluno</p>
@@ -88,8 +89,8 @@
                 <div  class="info-items">ALTERAÇÕES CROMOSSÔMICAS: Alterações estruturais e numéricas. Mosaicismo. (12/08/2024 - 12/08/2024)</div>
                 <div  class="info-items">SISTEMA DE ESTUDOS DE RECUPERAÇÃO (AULA) (19/08/2024 - 19/08/2024)</div>
                 <div  class="info-items">1ª Avaliação (3º TRIMESTRE) - O conteúdo desta avaliação será o que segue: NÚCLEO, CICLO CELULAR (interfase, mitose e meiose) e ALTERAÇÕES CROMOSSÔMICAS. (26/08/2024 - 26/08/2024)</div>
-            </div>
-            <div id="content-right">
+            </section>
+            <section id="content-right">
                 <div class="container-aula ultima-noticia">
                     <h3>Últimas notícias</h3>
                     <strong>instruções para quem está abrindo os slides das aulas com os textos desconfigurados - 14/06/2024 19:31</strong> <br>
@@ -138,13 +139,16 @@
                         7ª Avaliação<br>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
     </div>
     
 
    
-
+    <section id="mob-only-change">
+        <img src="Imagens/Icones/placeholder.png" alt="" onclick="mudarPagina(1)">
+        <img src="Imagens/Icones/placeholder.png" alt="" onclick="mudarPagina(0)">
+    </section>
     <footer id="rodape">
         <p>Trabalho SEPE 2024 - IFC - Campus Concórdia</p>
     </footer>

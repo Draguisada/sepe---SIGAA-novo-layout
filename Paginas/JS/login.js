@@ -8,9 +8,12 @@ function getRandomIntInclusive(min, max) {
 let footersec = document.getElementsByClassName('footer-section');
 let sections = document.getElementsByClassName('section');
 let aberto = 0
+const nome = document.getElementById('nome-ifc');
+const nomegrande = document.getElementsByClassName('header-sigaa-h3');
+let nomeextenso = ["Sistema Integrado de Gestão de Atividades Acadêmicas", "Sistema Integrado de Patrimônio, Administração e Contratos", "Sistema Integrado de Gestão de Recursos Humanos", "Sistema de Administração dos Sistemas (Técnica e Gestão)"]
 
 
-function selectSection(elem) {
+function selectSection(elem, ints) {
     if (window.innerWidth > 600){
         for (i=0; i<sections.length; i++) {
             sections[i].classList.remove('selected')
@@ -28,12 +31,16 @@ function selectSection(elem) {
             footersec[1].style.display = 'inline-block';
             footersec[2].style.display = 'inline-block';
         }
+
+
+    
     } else if (window.innerWidth <= 600) {
         if (!aberto) {
             for(i=0;i<sections.length;i++) {
                 sections[i].style.display = 'block';
             }
             aberto = 1;
+            return;
         } else if (elem.classList.contains('selected') || aberto) {
             for(i=0;i<sections.length;i++) {
                 sections[i].style.display = 'none';
@@ -41,11 +48,13 @@ function selectSection(elem) {
             elem.style.display = 'block';
             aberto = 0;
         }
+
         for (i=0; i<sections.length; i++) {
             sections[i].classList.remove('selected')
         }
 
         elem.classList.add('selected')
+        
 
         if (!(sections[0].classList.contains('selected'))) {
 
@@ -57,7 +66,12 @@ function selectSection(elem) {
             footersec[1].style.display = 'inline-block';
             footersec[2].style.display = 'inline-block';
         }
+
+        
     }
+    let titulo = document.querySelector('.selected > a > strong').innerText;
+    nome.innerText = 'IFC - ' + titulo;
+    nomegrande[0].innerText = nomeextenso[ints];
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -91,9 +105,16 @@ function changeColorSchemeGay() {
 
     colorScheme++;
 }
-
+const all = document.querySelectorAll('*')
 function changeColorScheme() {
-    
+    for(i=0;i<all.length;i++) {
+        all[i].style.transition = "0.8s";
+    }
+    setInterval(function () {
+        for(i=0;i<all.length;i++) {
+            all[i].style.transition = "0s";
+        }
+    }, 2000)
     if (colorScheme == 1) {
         cores.href = "Paginas/CSS/Cores/coresSigClassico.css";
         colorScheme = 0;
