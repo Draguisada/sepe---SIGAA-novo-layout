@@ -104,6 +104,7 @@
     margin: var(--m-size) 0;
 
     height: 6vh;
+    min-height: fit-content;
 
     align-content: center;
     justify-items: center;

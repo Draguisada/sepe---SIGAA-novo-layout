@@ -28,8 +28,10 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-#main {
+main {
     min-height: 100vh;
+    display: block;
+    unicode-bidi: isolate;
 }
 
 a{
@@ -108,12 +110,13 @@ body {
 /* Fim header IFC */
 
 
-@media (max-width: 1660px) {
+@media (min-width: 1280px){
     :root{
-    font-size: 16px;
-    --titulo-text: 16px;
-    --normal-text: 12px;
-    }}
+        font-size: 16px;
+        --titulo-text: 16px;
+        --normal-text: 12px;
+    }
+}
 
 @media (max-width: 1280px){
     :root{

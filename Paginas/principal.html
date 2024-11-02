@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,33 +11,42 @@
 
 
 </head>
+
 <body>
-    <div id="main">
+    <main>
         <!-- Header default IFC - SIGAA-->
         <header>
-            <a href="../index.html" id="if-logo"><img src="Imagens/Icones/IF-Logo.png" alt="Logo dos Institutos Federais" ></a>
+            <a href="../index.html" id="if-logo"><img src="Imagens/Icones/IF-Logo.png"
+                    alt="Logo dos Institutos Federais"></a>
             <table>
                 <tr>
                     <th></th>
-                    <td><h1 class="header-sigaa-h1">IFC - SIGAA</h1></td>
+                    <td>
+                        <h1 class="header-sigaa-h1">IFC - SIGAA</h1>
+                    </td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td class="td-header"><h3 class="header-sigaa-h3">Sistema Integrado de Gestão de Atividades Acadêmicas</h3></td>
+                    <td class="td-header">
+                        <h3 class="header-sigaa-h3">Sistema Integrado de Gestão de Atividades Acadêmicas</h3>
+                    </td>
                 </tr>
             </table>
             <div class="right">
-                <img class="config-perfil" src="Imagens/Icones/Engrenagem.svg" alt="Configuracoes de perfil" onclick="changeColorScheme()">
-                <a href="../index.html"><img class="config-perfil" src="Imagens/Icones/Sair.svg" alt="Sair da conta"></a>
+                <img class="config-perfil" src="Imagens/Icones/Engrenagem.svg" alt="Configuracoes de perfil"
+                    onclick="changeColorScheme()">
+                <a href="../index.html"><img class="config-perfil" src="Imagens/Icones/Sair.svg"
+                        alt="Sair da conta"></a>
             </div>
-            
+
         </header>
         <!-- header fim-->
         <!-- Iniciar main content / Navbar -->
         <!-- Acabar Navbar -->
         <div id="main-content">
             <div class="main-content-bar text-centered" onclick="toggleVisibility('main-content-menu', this)">
-                Menu Aluno <img src="Imagens/Icones/Seta-cima.svg" alt="Pode clicar para diminuir a expansão" class="setinha">
+                Menu Aluno <img src="Imagens/Icones/Seta-cima.svg" alt="Pode clicar para diminuir a expansão"
+                    class="setinha">
             </div>
 
             <div id="main-content-menu" class="text-centered">
@@ -173,7 +183,8 @@
                         <div class="info-content-item">
                             <div class="info-content-item-title">Química</div>
                             <div class="info-content-item-desc">
-                                <p>Novo Tópico de Aula: Conteúdo Misturas e Separações - Reposição Devido à Greve Nacional dos Trabalhadores da Educação - 03/04/2024 à 24/06/2024 - ...</p>  
+                                <p>Novo Tópico de Aula: Conteúdo Misturas e Separações - Reposição Devido à Greve
+                                    Nacional dos Trabalhadores da Educação - 03/04/2024 à 24/06/2024 - ...</p>
                             </div>
                         </div>
                     </div>
@@ -181,1005 +192,742 @@
             </div>
             <!-- Noticias fim-->
             <div class="main-content-bar text-centered" onclick="toggleVisibility('section-highschool', this)">
-                Ensino Médio <img src="Imagens/Icones/Seta-baixo.svg" alt="Pode clicar para diminuir a expansão" class="setinha">
+                Ensino Médio <img src="Imagens/Icones/Seta-baixo.svg" alt="Pode clicar para diminuir a expansão"
+                    class="setinha">
             </div>
             <div id="section-highschool" style="display: flex;">
-                <div class="subject-type alimentos agro info primeiroano segundoano">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Artes</div>
-                                <div class="nota-titulo-professor">Valéria M. de Alvarenga</div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Turma 1G</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">9.5</strong></div>
-                                </div>
-                            </div>
+                <!-- Começa cards Ens médio -->
+                <article class=" alimentos agro info primeiroano segundoano">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Artes</p>
+                            <p>Valéria M. de Alvarenga</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>Turma 1G
+                            </p>
+                            <p>Nota do Trimestre:<br><strong class="nota">6.0</strong></p>
                         </div>
                     </div>
-                </div>
-                <div class="subject-type">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <a href="disciplina.html">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Biologia</div>
-                                <div class="nota-titulo-professor">Thiago Raugust</div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Turma 1G</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">6.9</strong></div>
-                                </div>
-                            </div>
+                </article>
+
+                <a href="disciplina.html">
+                <article>
+                
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Biologia</p>
+                            <p>Thiago Raugust</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                
+                            <p><strong>Local</strong> <br>Turma 1G </p>
+                
+                            <p>Nota do Trimestre:<br><strong class="nota">6.0</strong></p>
                         </div>
                     </div>
-                    </a>
-                </div>
-                <div class="subject-type alimentos agro info primeiroano segundoano">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Ed. Física</div>
-                                <div class="nota-titulo-professor">Cleiton Bosio</div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Ginásio</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">10</strong></div>
-                                </div>
-                            </div>
+                
+                </article>
+                </a>
+                <article class="alimentos agro info primeiroano segundoano">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Ed. Física</p>
+                            <p>Cleiton Bosio</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>Ginásio</p>
+                            <p>Nota do Trimestre:<br><strong class="nota">10</strong></p>
                         </div>
                     </div>
-                </div>
-                <div class="subject-type">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Física</div>
-                                <div class="nota-titulo-professor">Carlos J. S. Amorim</div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Turma 1G</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">7.0</strong></div>
-                                </div>
-                            </div>
+                </article>
+
+                <article>
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Física</p>
+                            <p>Carlos J. S. Amorim</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>Turma 1G
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">7.0</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="subject-type">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Geografia</div>
-                                <div class="nota-titulo-professor">Flavio A. Manfrin</div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Turma 1G</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">8.8</strong></div>
-                                </div>
-                            </div>
+                </article>
+
+                <article>
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Geografia</p>
+                            <p>Flavio A. Manfrin</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>Turma 1G
+
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">8.8</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!-- Card inicio -->
-                <div class="subject-type">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">História</div>
-                                <div class="nota-titulo-professor">Maria D. Bortolini </div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Turma 1G</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">9.3</strong></div>
-                                </div>
-                            </div>
+                <article>
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>História</p>
+                            <p>Maria D. Bortolini</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong> <br>Turma 1G </p>
+                            <p>Nota do Trimestre: <br>
+                                <strong class="nota">9.3</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </article>
+
                 <!-- Card fim 💀 -->
-                <div class="subject-type">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Língua portuguesa e literatura</div>
-                                <div class="nota-titulo-professor">Silvia F. S. D. Costa </div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Turma 1G</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">8.1</strong></div>
-                                </div>
-                            </div>
+                <article>
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Língua portuguesa e literatura
+                            <p>Silvia F. S. D. Costa </p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>Turma 1G</p>
+                            <p>Nota do Trimestre:<br><strong class="nota">8.1</strong></p>
                         </div>
                     </div>
-                </div>
+                </article>
+
                 <!-- Card inicio -->
-                <div class="subject-type">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Matemática</div>
-                                <div class="nota-titulo-professor">Marili C. Minella </div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Turma 1G</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">5.7</strong></div>
-                                </div>
-                            </div>
+                <article>
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Matemática
+                            </p>
+                            <p>Marili C. Minella </p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>Turma 1G
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">5.7</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </article>
+
                 <!-- Card fim 💀 -->
                 <!-- Card inicio -->
-                <div class="subject-type">
-                <div class="subject-type-header text-centered"></div>
-                <div class="subject-type-content">
-                    <div class="nota-card">
-                        <div class="nota-titulo text-centered">
-                            <div class="nota-titulo-materia">Química</div>
-                            <div class="nota-titulo-professor">Bruno R. Rabello </div>
+                <article>
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Química</p>
+                            <p>Bruno R. Rabello </p>
                         </div>
-                        <div class="nota-conteudo text-centered">
-                            <div class="nota-conteudo-local">
-                                <div class="nota-conteudo-local-texto">Local:</div>
-                                <div class="nota-conteudo-local-valor">Turma 1G</div>
-                            </div>
-                            <div class="nota-conteudo-nota">
-                                <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                <div class="nota-conteudo-nota-valor"><strong class="nota">9.6</strong></div>
-                            </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>Turma 1G
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">9.6</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
-                </div>
+                </article>
+
                 <!-- Card fim 💀 -->
                 <!-- Card inicio -->
-                <div class="subject-type segundoano terceiroano alimentos info">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Filosofia</div>
-                                <div class="nota-titulo-professor"></div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor"></div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">9.6</strong></div>
-                                </div>
-                            </div>
+                <article class="segundoano terceiroano alimentos info">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Filosofia
+                            </p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">9.6</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </article>
+
                 <!-- Card fim 💀 -->
                 <!-- Card inicio -->
-                <div class="subject-type segundoano terceiroano alimentos info">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Sociologia</div>
-                                <div class="nota-titulo-professor">Liamara Fornari</div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor"></div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">9.6</strong></div>
-                                </div>
-                            </div>
+                <article class=" segundoano terceiroano alimentos info">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Sociologia</p>
+                            <p>Liamara Fornari</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br></p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">9.6</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </article>
+
                 <!-- Card fim 💀 -->
 
                 <!-- Card inicio -->
-                <div class="subject-type primeiroano terceiroano agro">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Sociologia</div>
-                                <div class="nota-titulo-professor">Liamara Fornari</div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor"></div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">9.6</strong></div>
-                                </div>
-                            </div>
+                <article class=" primeiroano terceiroano agro">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Sociologia </p>
+                            <p>Liamara Fornari</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br></p>
+                            <p>Nota do Trimestre:<br>
+                                <strong class="nota">9.6</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </article>
+
                 <!-- Card fim 💀 -->
                 <!-- Card inicio -->
-                <div class="subject-type primeiroano segundoano agro">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Filosofia</div>
-                                <div class="nota-titulo-professor"></div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor"></div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">9.6</strong></div>
-                                </div>
-                            </div>
+                <article class=" primeiroano segundoano agro">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Filosofia
+                            </p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br> Turma </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">9.6</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!-- Card fim 💀 -->
-
-
             </div>
             <div class="main-content-bar text-centered" onclick="toggleVisibility('section-technical', this)">
-                Técnico <img src="Imagens/Icones/Seta-baixo.svg" alt="Pode clicar para diminuir a expansão" class="setinha">
+                Técnico <img src="Imagens/Icones/Seta-baixo.svg" alt="Pode clicar para diminuir a expansão"
+                    class="setinha">
             </div>
             <div id="section-technical" style="display: flex;">
-                        <!-- INFORMÁTICA -->
-                        <!-- Card inicio -->
-                        <div class="subject-type info tecnico primeiroano segundoano terceiroano">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Desenvolvimento Web</div>
-                                        <div class="nota-titulo-professor">Alisson B. Zanetti </div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">Lab. 1</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">5.1</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type primeiroano info tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Introdução à computação</div>
-                                        <div class="nota-titulo-professor">Rafael M. Spada </div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">Lab. 3</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.3</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type info tecnico primeiroano">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Programação</div>
-                                        <div class="nota-titulo-professor">Tiago Mazzutti</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">Lab. 1</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">10</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type info tecnico primeiroano segundoano terceiroano">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Projeto integrador</div>
-                                        <div class="nota-titulo-professor">Caroline G. Silva, Rafael M. Spada, Heitor S. Neto </div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">Lab. 2</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
+                <!-- AGRO -->
+            <!-- Card inicio -->
+            <article class=" agro alimentos primeiroano segundoano terceiroano tecnico">
+                <div>
+                    <div class="card-titulo text-centered">
+                        <p>Prática Profissional Orientada</p>
+                    </div>
+                    <div class="card-conteudo text-centered">
+                        <p><strong>Local</strong><br></p>
+                        <p>Nota do Trimestre:<br>
+                            <strong class="nota">6.0</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-                        <!-- Card inicio -->
-                        <div class="subject-type info tecnico segundoano">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Banco de dados</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">Lab. 2</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type info tecnico segundoano">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Projeto de software</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">Lab. 2</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
+            <!-- Card fim 💀 -->
 
-                        <!-- Card inicio -->
-                        <div class="subject-type info tecnico terceiroano">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Desenvolvimento para dispositivos móveis</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">Lab. 2</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type info tecnico terceiroano">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Redes de computadores</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">Lab. 2</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
+            <!-- Card inicio -->
+            <article class=" agro primeiroano segundoano terceiroano tecnico">
+                <div>
+                    <div class="card-titulo text-centered">
+                        <p>Zootecnia</p>
+                    </div>
+                    <div class="card-conteudo text-centered">
+                        <p><strong>Local</strong><br></p>
+                        <p>Nota do Trimestre:
+                            <br><strong class="nota">6.0</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- Card fim 💀 -->
+            <!-- Card inicio -->
+            <article class=" agro primeiroano segundoano terceiroano tecnico">
+                <div>
+                    <div class="card-titulo text-centered">
+                        <p>Agricultura</p>
+                    </div>
+                    <div class="card-conteudo text-centered">
+                        <p><strong>Local</strong><br></p>
+                        <p>Nota do Trimestre:
+                            <br><strong class="nota">6.0</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
 
+            <!-- Card fim 💀 -->
+            <!-- Card inicio -->
+            <article class=" agro primeiroano tecnico">
+                <div>
+                    <div class="card-titulo text-centered">
+                        <p>Desenho tecnico</p>
+                    </div>
+                    <div class="card-conteudo text-centered">
+                        <p><strong>Local</strong><br></p>
+                        <p>Nota do Trimestre:
+                            <br><strong class="nota">6.0</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-                        <!-- ALIMENTOS -->
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos segundoano terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Projeto integrador</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos primeiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Química e Bioquimica de Alimentos</div>
-                                        <div class="nota-titulo-professor">Samantha Lemke Gonzalez</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">1E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos primeiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Introdução aos processos tecnológicos</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">1E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos primeiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Garantia da qualidade e higiene</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">1E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos primeiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Segurança no trabalho</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">1E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
+            <!-- Card fim 💀 -->
+            <!-- Card inicio -->
+            <article class=" agro segundoano tecnico">
+                <div>
+                    <div class="card-titulo text-centered">
+                        <p>Topografia</p>
+                    </div>
+                    <div class="card-conteudo text-centered">
+                        <p><strong>Local</strong><br></p>
+                        <p>Nota do Trimestre:
+                            <br><strong class="nota">6.0</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- Card fim 💀 -->
+            <!-- Card inicio -->
+            <article class=" agro segundoano tecnico">
+                <div>
+                    <div class="card-titulo text-centered">
+                        <p>Mecanização agrícola
+                        </p>
+                    </div>
+                    <div class="card-conteudo text-centered">
+                        <p><strong>Local</strong><br></p>
+                        <p>Nota do Trimestre:
+                            <br><strong class="nota">6.0</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- Card fim 💀 -->
 
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos segundoano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Microbiologia de alimentos</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">2E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <!-- Card inicio -->
+            <article class=" agro terceiroano tecnico">
+                <div>
+                    <div class="card-titulo text-centered">
+                        <p>Gestão e cooperação rural</p>
+                    </div>
+                    <div class="card-conteudo text-centered">
+                        <p><strong>Local</strong><br></p>
+                        <p>Nota do Trimestre:<br>
+                            <strong class="nota">6.0</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- Card fim 💀 -->
+            <!-- Card inicio -->
+            <article class=" agro terceiroano tecnico">
+                <div>
+                    <div class="card-titulo text-centered">
+                        <p>Irrigação e drenagem</p>
+                    </div>
+                    <div class="card-conteudo text-centered">
+                        <p><strong>Local</strong><br></p>
+                        <p>Nota do Trimestre:<br>
+                            <strong class="nota">6.0</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- Card fim 💀 -->
+            <!-- Card inicio -->
+            <article class=" agro terceiroano tecnico">
+                <div>
+                    <div class="card-titulo text-centered">
+                        <p>Agroindustria</p>
+                    </div>
+                    <div class="card-conteudo text-centered">
+                        <p><strong>Local</strong><br></p>
+                        <p>Nota do Trimestre:
+                            <br><strong class="nota">6.0</strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- Card fim 💀 -->
+                <!-- INFORMÁTICA -->
+                <!-- Card inicio -->
+                <article class="info tecnico primeiroano segundoano terceiroano">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Desenvolvimento Web</p>
+                            <p>Alisson B. Zanetti </p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos segundoano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Tecnologia de produtos de origem vegetal</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">2E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong> <br>Lab. 1 </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">5.1</strong>
+                            </p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos segundoano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Análise bromatológica e sensorial de alimentos</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">2E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card fim 💀 -->
+                    </div>
+                </article>
 
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Nutrição e dietética</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">3E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class="primeiroano info tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Introdução à computação</p>
+                            <p>Rafael M. Spada </p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Tecnologia de produtos de origem animal</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">3E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="card-conteudo">
+                            <p><strong>Local</strong>: <br>
+                                Lab. 3</p>
+                            <p>Nota do Trimestre:: <br>
+                                <strong class="nota">6.3</strong>
+                            </p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type alimentos terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Bebidas e processos biotecnológicos alimentares</div>
-                                        <div class="nota-titulo-professor"></div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor">3E</div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </article>
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" info tecnico primeiroano">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Programação</p>
+                            <p>Tiago Mazzutti</p>
                         </div>
-                        <!-- Card fim 💀 -->
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>Lab. 1</p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">10</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" info tecnico primeiroano segundoano terceiroano">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Projeto integrador</p>
+                            <p>Caroline G. Silva, Rafael M. Spada, Heitor S. Neto </p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>Lab. 2</p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card fim 💀 -->
+
+                <!-- Card inicio -->
+                <article class=" info tecnico segundoano">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Banco de dados
+                            </p>
+                            <p>Rafael M. Spada</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>Lab. 2</p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" info tecnico segundoano">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Projeto de software
+                            </p>
+                            <p>Alisson Borges</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>Lab. 2</p>
+                            <p>Nota do Trimestre:<br>
+                                <strong class="nota">6.0</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card fim 💀 -->
+
+                <!-- Card inicio -->
+                <article class=" info tecnico terceiroano">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Desenvolvimento para dispositivos móveis</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong> <br>Lab. 2</p>
+                            <p>Nota do Trimestre:<br><strong class="nota">6.0</strong></p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" info tecnico terceiroano">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Redes de computadores
+                            </p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>Lab. 2
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card fim 💀 -->
 
 
-                        <!-- AGRO -->
-                        <!-- Card inicio -->
-                        <div class="subject-type agro alimentos primeiroano segundoano terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Prática Profissional Orientada</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- ALIMENTOS -->
+                <!-- Card inicio -->
+                <article class=" alimentos segundoano terceiroano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Projeto integrador
+                            </p>
                         </div>
-                        <!-- Card fim 💀 -->
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
 
-                        <!-- Card inicio -->
-                        <div class="subject-type agro primeiroano segundoano terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Zootecnia</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" alimentos primeiroano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Química e Bioquimica de Alimentos
+                            </p>
+                            <p>Samantha Lemke Gonzalez</p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type agro primeiroano segundoano terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Agricultura</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>1E
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type agro primeiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Desenho tecnico</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </article>
+
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" alimentos primeiroano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Introdução aos processos tecnológicos
+                            </p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type agro segundoano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Topografia</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>1E
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type agro segundoano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Mecanização agrícola</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </article>
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" alimentos primeiroano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Garantia da qualidade e higiene</p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        
-                        <!-- Card inicio -->
-                        <div class="subject-type agro terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Gestão e cooperação rural</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>1E</p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type agro terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Irrigação e drenagem</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </article>
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" alimentos primeiroano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Segurança no trabalho
+                            </p>
                         </div>
-                        <!-- Card fim 💀 -->
-                        <!-- Card inicio -->
-                        <div class="subject-type agro terceiroano tecnico">
-                            <div class="subject-type-header text-centered"></div>
-                            <div class="subject-type-content">
-                                <div class="nota-card">
-                                    <div class="nota-titulo text-centered">
-                                        <div class="nota-titulo-materia">Agroindustria</div>
-                                    </div>
-                                    <div class="nota-conteudo text-centered">
-                                        <div class="nota-conteudo-local">
-                                            <div class="nota-conteudo-local-texto">Local:</div>
-                                            <div class="nota-conteudo-local-valor"></div>
-                                        </div>
-                                        <div class="nota-conteudo-nota">
-                                            <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                            <div class="nota-conteudo-nota-valor"><strong class="nota">6.0</strong></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>1E
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
                         </div>
-                        <!-- Card fim 💀 -->
-            </div>
+                    </div>
+                </article>
+
+                <!-- Card fim 💀 -->
+
+                <!-- Card inicio -->
+                <article class=" alimentos segundoano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Microbiologia de alimentos</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>2E</p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" alimentos segundoano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Tecnologia de produtos de origem vegetal
+                            </p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>2E
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" alimentos segundoano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Análise bromatológica e sensorial de alimentos</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>2E
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card fim 💀 -->
+
+                <!-- Card inicio -->
+                <article class=" alimentos terceiroano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Nutrição e dietética</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong>
+                                <br>3E
+                            </p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" alimentos terceiroano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Tecnologia de produtos de origem animal</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>3E</p>
+
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.0</strong></p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card fim 💀 -->
+                <!-- Card inicio -->
+                <article class=" alimentos terceiroano tecnico">
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Bebidas e processos biotecnológicos alimentares</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>3E</p>
+                        </div>
+                        <p>Nota do Trimestre:<br><strong class="nota">6.0</strong></p>
+                    </div>
+                    </div>
+                </article>
+            
+
             <div class="main-content-bar text-centered" onclick="toggleVisibility('section-opt', this)">
-                Optativas <img src="Imagens/Icones/Seta-baixo.svg" alt="Pode clicar para diminuir a expansão" class="setinha">
+                Optativas <img src="Imagens/Icones/Seta-baixo.svg" alt="Pode clicar para diminuir a expansão"
+                    class="setinha">
             </div>
             <div id="section-opt" style="display: flex;">
                 <!-- Card inicio -->
-                <div class="subject-type">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Inglês B3</div>
-                                <div class="nota-titulo-professor">Ronaldo</div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Sala 2B</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">8.7</strong></div>
-                                </div>
-                            </div>
+                <article>
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Inglês B3</p>
+                            <p>Ronaldo</p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>Sala 2B</p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">8.7</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!-- Card fim 💀 -->
                 <!-- Card inicio -->
-                <div class="subject-type">
-                    <div class="subject-type-header text-centered"></div>
-                    <div class="subject-type-content">
-                        <div class="nota-card">
-                            <div class="nota-titulo text-centered">
-                                <div class="nota-titulo-materia">Física para o ENEM</div>
-                                <div class="nota-titulo-professor">Fábio L. Evangelista </div>
-                            </div>
-                            <div class="nota-conteudo text-centered">
-                                <div class="nota-conteudo-local">
-                                    <div class="nota-conteudo-local-texto">Local:</div>
-                                    <div class="nota-conteudo-local-valor">Sala 2A</div>
-                                </div>
-                                <div class="nota-conteudo-nota">
-                                    <div class="nota-conteudo-nota-texto">Nota do Trimestre:</div>
-                                    <div class="nota-conteudo-nota-valor"><strong class="nota">6.8</strong></div>
-                                </div>
-                            </div>
+                <article>
+                    <div>
+                        <div class="card-titulo text-centered">
+                            <p>Física para o ENEM</p>
+                            <p>Fábio L. Evangelista </p>
+                        </div>
+                        <div class="card-conteudo text-centered">
+                            <p><strong>Local</strong><br>Sala 2A</p>
+                            <p>Nota do Trimestre:
+                                <br><strong class="nota">6.8</strong>
+                            </p>
                         </div>
                     </div>
-                </div>
-                <!-- Card fim 💀 -->
-            </div>
+                </article>
+            <!-- Card fim 💀 -->
         </div>
         <aside id="side-menu">
             <div id="perfil-estudante">
@@ -1195,10 +943,11 @@
                     </div>
                     <div class="dados-institucionais-aluno-imagem">
                         <img src="Imagens/Icones/sem-foto.jpg" alt="Sua imagem" class="imagem-aluno">
-                        <img src="Imagens/Icones/Editar-img.png" alt="Você pode mudar está imagem" class="editar-imagem">
+                        <img src="Imagens/Icones/Editar-img.png" alt="Você pode mudar está imagem"
+                            class="editar-imagem">
                     </div>
                 </div>
-        
+
                 <div class="segmentos-perfil-estudante esconder-aluno">
                     <div class="agenda-aluno text-centered">
                         <div id="coluna-1">
@@ -1206,9 +955,10 @@
                                 <img src="Imagens/Icones/Forum de curso.png" alt="">
                                 <p>Fórum <br> de curso</p>
                             </div>
-                            <div><a href="https://manuais.dti.ifc.edu.br/doku.php?id=wiki:suporte_tecnico:federacao_cafe" target="_blank">
-                                <img src="Imagens/Icones/CAPES.png" alt="">
-                                <p>CAPES</p>
+                            <div><a href="https://manuais.dti.ifc.edu.br/doku.php?id=wiki:suporte_tecnico:federacao_cafe"
+                                    target="_blank">
+                                    <img src="Imagens/Icones/CAPES.png" alt="">
+                                    <p>CAPES</p>
                             </div></a>
                             <div>
                                 <img src="Imagens/Icones/Comunidade Virtual.png" alt="">
@@ -1217,24 +967,24 @@
                         </div>
                         <div id="coluna-2">
                             <div><a href="https://ifc.pergamum.com.br/" target="_blank">
-                                <img src="Imagens/Icones/Pergamum.png" alt="">
-                                <p>Pergamum</p>
+                                    <img src="Imagens/Icones/Pergamum.png" alt="">
+                                    <p>Pergamum</p>
                             </div></a>
                             <div><a href="https://ifc.pergamum.com.br/login?redirect=/meupergamum" target="_blank">
-                                <img src="Imagens/Icones/Meu Pergamum.png" alt="">
-                                <p>Meu <br> Pergamum</p>
+                                    <img src="Imagens/Icones/Meu Pergamum.png" alt="">
+                                    <p>Meu <br> Pergamum</p>
                             </div></a>
                         </div>
                     </div>
                 </div>
-            
-        
+
+
                 <div class="segmentos-perfil-estudante esconder-aluno">
                     <a class="links-uteis" href="#">Boletim</a><br><br>
                     <a class="links-uteis" href="#">Calendário acadêmico</a><br><br>
                     <a class="links-uteis" href="#">Organização Didática dos Cursos</a><br><br>
                     <a class="links-uteis" href="#">Calendário do refeitório</a>
-                    
+
                 </div>
             </div>
 
@@ -1275,11 +1025,12 @@
                 </div>
             </div>
         </aside>
-    </div>
-    <footer id="rodape">
-        <p>Trabalho SEPE 2024 - IFC - Campus Concórdia</p>
-    </footer>
+    </main>
+        <footer id="rodape">
+            <p>Trabalho SEPE 2024 - IFC - Campus Concórdia</p>
+        </footer>
 
 </body>
 <script src="JS/principal.js"></script>
+
 </html>

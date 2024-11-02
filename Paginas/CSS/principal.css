@@ -1,6 +1,13 @@
 @import url(padrao.css);
 
+@media (max-width: 600px){
+    :root{
+    font-size: 14px;
+    --titulo-text: 16px;
+    --normal-text: 14px;
+    }
 
+}
 
 
 header {
@@ -13,61 +20,15 @@ header {
 }
 
 #side-menu {
-    float: right;
+    /* float: right; */
     width: 25%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 6.3%;
 }
-
-/* card pequeno */
-.nota-card {
-    font-size: var(--titulo-text);
-    background-color: var(--cor-cinza-padrao);
-    width: 17.3em;
-    height: 8em;
-    border-radius: 10px;
-    overflow: none;
-    
-}
-.nota-titulo {
-    background-color: var(--cor-verde-header);
-    color: var(--cor-branco-padrao);
-    border-radius: 10px 10px 0px 0px;
-    padding: var(--xs-size);
-}
-
-.nota-titulo-professor {
-    color: var(--cor-branco-padrao);
-    border-radius: 0px 10px 0px 0px;
-    font-size:var(--normal-text);
-}
-
-.nota-titulo-materia {
-    font-weight: bold;
-}
-.nota-conteudo-local {
-    color: var(--cor-branco-padrao);
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-}
-.nota-conteudo-nota-texto {
-    color: var(--cor-verde-destaque);
-}
-.nota-conteudo-nota-valor {
-    color: var(--cor-branco-padrao);
-    border-radius: var(--xxs-size);
-    display: inline-block;
-    padding: 0.2rem 0.2rem;
-}
-.nota-conteudo {
-    font-weight: bold;
-    display:inline-flex;
-    justify-self: center;
-    padding: 5% 0.5em;
-    gap: var(--l-size);   
-}
-/* card pequeno fim */
-
 
 /* Perfil estudante */
 /* Segmentos Perfil estudante */
@@ -196,11 +157,16 @@ color: var(--cor-preto-padrao);
     font-size: var(--titulo-text);
     color: var(--cor-verde-destaque);
     border-radius: 0 10px 10px 0;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 1vh 0;
+    
+    padding: 0.5%;
     font-weight: bold;
     user-select: none;
     text-decoration: none;
+    min-height: 2rem;
+    align-items: center;
+    display:flex;
+    justify-content: center;
 }
 .main-content-bar:hover {
     text-decoration: underline;
@@ -261,11 +227,6 @@ color: var(--cor-preto-padrao);
 
 
 /* Acabou Main Content Menu*/
-#section-highschool {
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* Centers the content horizontally */
-    margin-left:1vw;
-}
 
 #section-highschool, #section-technical, #section-opt {
     flex-wrap: wrap;
@@ -278,11 +239,7 @@ color: var(--cor-preto-padrao);
     row-gap: 1vh;
 }
 
-.subject-type {
-    flex: 1 1 100px; /* Allows each card to grow/shrink while maintaining a minimum width */
-    max-width: fit-content; /* Optional: Set a maximum width */
-    box-sizing: border-box;
-}
+
 
 #section-opt {
     margin-bottom: 3vh;
@@ -300,7 +257,7 @@ color: var(--cor-preto-padrao);
     width: 48%; /* each div takes up 48% of the space with some margin between */
     box-sizing: border-box; /* ensures padding/border doesn't affect width */
     font-size: var(--normal-text);
-    height: 13.3em;
+    min-height: 10vh;
     background-color: var(--cor-cinza-padrao);
     position: relative;
 }
@@ -465,47 +422,7 @@ color: var(--cor-preto-padrao);
 }
 
 
- /* """REATIVO""" */
-
-@media (max-width: 600px) {
-    .dados-institucionais-aluno-dados {
-        display: none;
-    }
-    
-    #main-content-info-news {
-        display: none;
-    }
-    .main-content-info-card {
-        width: 100%;
-    }
-
-    #tabela-atividades {
-        display: none;
-    }
-    .main-content-bar {
-        width: 93vw;
-    }
-
-    #side-menu {
-        display: none;
-    }
-}
-
-
-
-@media (max-width: 850px) {
-    /* .dados-institucionais-aluno {
-        display: none;
-    } */
-
-    #perfil-estudante {
-        padding: 0;
-    }
-
-    #main-content {
-        width: 70%;
-    }
-}
+ 
 
 
  /* """REATIVO""" FIM */
@@ -536,9 +453,118 @@ color: var(--cor-preto-padrao);
     right: 0; /* Aligns to the inner right of the div */
   }
 
+
+
+
+
+/* Organização melhorada */
+
+#section-technical > article, #section-highschool > article {
+    /* flex: 1 1 100px; Allows each card to grow/shrink while maintaining a minimum width */
+    min-width: fit-content; 
+    box-sizing: border-box;
+    min-height: fit-content;
+    height: 3rem;
+    flex-direction: column;
+}
+
+article > * {
+    display: block;
+}
+
+article > div {
+    min-width: 12vw;
+    min-height: fit-content;
+    
+}
+
+/* Titulo inicio */
+
+
+
+.card-titulo {
+    background-color: var(--cor-verde-header);
+    color: var(--cor-branco-padrao);
+    border-radius: 10px 10px 0px 0px;
+    padding: var(--xs-size);
+    text-align: center;
+    width: calc(100% - var(--xs-size)/2);
+    height: 100%;
+}
+
+.card-titulo > p:first-child {
+    color: var(--cor-branco-padrao);
+    border-radius: 0px 10px 0px 0px;
+    font-size: var(--titulo-text);
+    margin: 0;
+    font-weight: bold;
+}
+
+.card-titulo > p:nth-child(2) {
+    color: var(--cor-branco-padrao);
+    border-radius: 0px 10px 0px 0px;
+    font-size: var(--normal-text);
+    margin: 0;
+
+}
+
+
+
+/* Titulo fim */
+
+
+/* Conteudo inicio */
+.card-conteudo {
+    font-weight: bold;
+    display:inline-flex;
+    padding: var(--xs-size);
+    gap: 1vw;
+    background-color: var(--cor-cinza-padrao);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    width: calc(100% - var(--xs-size)/2);
+    justify-content: space-around;
+    height: 100%;
+} 
+
+.card-conteudo > p {
+    margin: 0;
+}
+
+.card-conteudo > p:first-child {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    font-size: var(--normal-text);
+}
+
+.card-conteudo > p:nth-child(2) {
+    color: var(--cor-verde-destaque);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nota {
+    color: white;
+    border-radius: var(--xxs-size);
+    padding: 1.5%;
+}
+
+/* Conteudo fim */
+
+
+
+
+
+
+
+
+/* Reativo */
 @media (min-width: 1080px) {
     #section-highschool, #section-technical, #section-opt {
         margin-left: 6vw;
+    }
+    article > div{
+        max-width: 18vw;
     }
 }
 
@@ -547,4 +573,71 @@ color: var(--cor-preto-padrao);
         margin-left: 0;
         column-gap: 0;
     }
+
+}
+
+@media (max-width: 600px) {
+    #main-content {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .dados-institucionais-aluno-dados {
+        display: none;
+    }
+    
+    #main-content-info-news {
+        display: none;
+    }
+    article > div {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #tabela-atividades {
+        display: none;
+    }
+    .main-content-bar {
+        width: 93vw;
+    }
+
+    #side-menu {
+        display: none;
+    }
+    article {
+        width: 80vw;
+    }
+
+    article > div {
+        height: 5vh;
+    }
+
+    #section-highschool, #section-technical, #section-opt {
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .card-conteudo > p {
+        font-size: 16px;
+        color: white;
+    }
+
+
+}
+@media (max-width: 850px) {
+    /* .dados-institucionais-aluno {
+        display: none;
+    } */
+
+    #perfil-estudante {
+        padding: 0;
+    }
+
+    #main-content {
+        width: 70%;
+    }
+
+    
 }

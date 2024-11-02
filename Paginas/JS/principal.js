@@ -3,24 +3,24 @@ function getRandomInt(max) {
 }
 
 function colorizeNotas() {
-    const notaElements = document.querySelectorAll('.nota-conteudo-nota-valor');
+    const notaElements = document.getElementsByClassName('nota');
 
-    notaElements.forEach(function(element) {
-        const notaValue = parseFloat(element.textContent);
+    for(i=0;i<notaElements.length;i++) {
+        let notaValue = parseFloat(notaElements[i].textContent);
 
         if (notaValue < 6) {
-            element.style.backgroundColor = '#c8191e';
+            notaElements[i].style.backgroundColor = '#c8191e';
         }
         else if (notaValue >= 6 && notaValue < 7) {
-            element.style.backgroundColor = '#e9d20a';
+            notaElements[i].style.backgroundColor = '#e9d20a';
         }
         else if (notaValue >= 7 && notaValue < 10) {
-            element.style.backgroundColor = '#2f9e41';
+            notaElements[i].style.backgroundColor = '#2f9e41';
         }
         else if (notaValue == 10) {
-            element.style.backgroundColor = '#2f9e41';
+            notaElements[i].style.backgroundColor = '#2f9e41';
         }
-    });
+    }
 }
 
 
