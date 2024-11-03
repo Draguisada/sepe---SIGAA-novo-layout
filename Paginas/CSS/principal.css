@@ -1,13 +1,6 @@
 @import url(padrao.css);
 
-@media (max-width: 600px){
-    :root{
-    font-size: 14px;
-    --titulo-text: 16px;
-    --normal-text: 14px;
-    }
 
-}
 
 
 header {
@@ -231,12 +224,12 @@ color: var(--cor-preto-padrao);
 #section-highschool, #section-technical, #section-opt {
     flex-wrap: wrap;
     justify-content: space-evenly; /* Centers the content horizontally */
-    margin-left:1vw;
 
 
     margin-left: 6vw;
-    column-gap: 2%;
-    row-gap: 1vh;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    flex-direction: row;
 }
 
 
@@ -306,16 +299,18 @@ color: var(--cor-preto-padrao);
     color: var(--cor-preto-padrao);
     align-items: center;
     justify-content: center;
-    margin-top: var(--xm-size);
+    /* margin-top: var(--xm-size); */
 }
 
-.info-content-item-title {
+.info-content-item-title p{
     font-weight: bold;
+    margin: var(--xs-size);
     font-size: var(--titulo-text);
 }
 
 .info-content-item-desc p{
     margin: var(--xs-size);
+    font-size: var(--normal-text);
 }
 
 /* esconder local aluno */
@@ -436,6 +431,10 @@ color: var(--cor-preto-padrao);
     align-items: center;
 }
 
+.right img {
+    width: 4vh;
+}
+
 #noticias-esquerda, #noticias-direita {
     position: absolute;
     top: 50%; /* Vertically center the SVG */
@@ -453,13 +452,16 @@ color: var(--cor-preto-padrao);
     right: 0; /* Aligns to the inner right of the div */
   }
 
-
+#section-highschool a {
+    /* text-decoration: none; */
+    color: white;
+}
 
 
 
 /* Organização melhorada */
 
-#section-technical > article, #section-highschool > article {
+#section-technical  article, #section-highschool article,#section-opt article {
     /* flex: 1 1 100px; Allows each card to grow/shrink while maintaining a minimum width */
     min-width: fit-content; 
     box-sizing: border-box;
@@ -474,8 +476,9 @@ article > * {
 
 article > div {
     min-width: 12vw;
+    width: 14vw;
     min-height: fit-content;
-    
+    align-items: center;
 }
 
 /* Titulo inicio */
@@ -525,6 +528,7 @@ article > div {
     width: calc(100% - var(--xs-size)/2);
     justify-content: space-around;
     height: 100%;
+    display: flex;
 } 
 
 .card-conteudo > p {
@@ -551,8 +555,14 @@ article > div {
 
 /* Conteudo fim */
 
+#mobile-header {
+    display:none;
+}
 
-
+#cog-mob {
+    display: none;
+    width: 4vh;
+}
 
 
 
@@ -564,55 +574,81 @@ article > div {
         margin-left: 6vw;
     }
     article > div{
-        max-width: 18vw;
+        max-width: 16vw;
     }
 }
 
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 601px) and (max-width: 1280px) {
     #section-highschool {
         margin-left: 0;
-        column-gap: 0;
+    }
+    article > div{
+        width: 16vw;
     }
 
 }
 
-@media (max-width: 600px) {
-    #main-content {
-        width: 100%;
-    }
-}
 
-
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .dados-institucionais-aluno-dados {
         display: none;
     }
+    #mobile-header {
+        display: block;
+        height: 8rem;
+        background-color: var(--cor-verde-header);
+        margin-top: -2vh;
+    }
+    #main-content-menu {
+        max-width: 100vw;
+        width: 100vw;
+        padding-left: 0;
+        justify-content: space-evenly;
+    }
+    :root{
+        font-size: 14px;
+        --titulo-text: 16px;
+        --normal-text: 14px;
+    }
+    #main-content {
+        width: 100%;
+    }
     
-    #main-content-info-news {
-        display: none;
+    #main-content-info {
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    article {
+        width: 70vw;
     }
     article > div {
         width: 100%;
         max-width: 100%;
+        height: 5.5vh;
     }
 
     #tabela-atividades {
         display: none;
     }
     .main-content-bar {
-        width: 93vw;
+        width: 99vw;
+        border-radius: 0;
     }
 
     #side-menu {
-        display: none;
-    }
-    article {
-        width: 80vw;
+        /* display: none; */
+        right: auto;
+        width: 100%;
+        min-height: fit-content ;
+        justify-content: flex-start;
     }
 
-    article > div {
-        height: 5vh;
+    #perfil-estudante {
+        flex-direction: row;
+        box-shadow: black 1px 1px 3px;
     }
+
 
     #section-highschool, #section-technical, #section-opt {
         width: 100vw;
@@ -622,6 +658,11 @@ article > div {
     .card-conteudo > p {
         font-size: 16px;
         color: white;
+    }
+
+    .dropdown-content2 {
+        right: 0;
+        left: auto;
     }
 
 
@@ -640,4 +681,38 @@ article > div {
     }
 
     
+}
+
+@media (max-width: 700px) {
+    .right img {
+        height: auto;
+        max-width: fit-content;
+        margin-right: 3vh;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .right > img {
+        display: none;
+    }
+    #perfil-estudante {
+        flex-direction: column;
+    }
+    #side-menu {
+        /* display: none; */
+        justify-content: space-around;
+    }
+    #cog-mob {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .config-perfil[src*="Sair"] {
+        margin-right: 1vw;
+    }
+    #side-menu {
+        top: 8%;
+    }
 }

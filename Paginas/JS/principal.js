@@ -37,30 +37,47 @@ function randomizeNotas(min = 5, rand = 4) {
 randomizeNotas();
 colorizeNotas();
 
+const mobileHeader = document.getElementById('mobile-header');
+const perfil_estudante = document.getElementById('perfil-estudante');
+let aberto = 0;
+let quaseTudo = document.querySelectorAll('#main-content > div');
 
 function mostrarPerfilAluno() {
-    let perfil_estudante = document.getElementById('perfil-estudante');
-    var esconder = document.getElementsByClassName('esconder-aluno');
-    var mostrar = document.getElementsByClassName('mostrar-aluno');
+    const esconder = document.getElementsByClassName('esconder-aluno');
+    const mostrar = document.getElementsByClassName('mostrar-aluno');
 
-    
     if (perfil_estudante.classList.contains('mostrar-aluno')) {
-        
-
+        mobileHeader.style.height = '8rem';
+        for (i = 0; i < quaseTudo.length; i++) {
+            quaseTudo[i].style.opacity = '1';
+        }
+        aberto = 0;
         for (i=0; i<=mostrar.length; i++){
             mostrar[0].classList.remove('mostrar-aluno');
             mostrar[0].classList.add('esconder-aluno');
         }
         mostrar[0].classList.remove('mostrar-aluno');
         mostrar[0].classList.add('esconder-aluno');
+        
+        
         return 0;
     }
-
+    mobileHeader.style.height = '30vh';
+    if (window.innerWidth <= 510) {
+        
+        if (!aberto) {
+            for (i = 0; i < quaseTudo.length; i++) {
+                quaseTudo[i].style.opacity = '0';
+            }
+            aberto = 1;
+            mobileHeader.style.height = '100vh';
+        }
+    }
     for (i=0; i<=esconder.length; i++){
         esconder[0].classList.add('mostrar-aluno');
         esconder[0].classList.remove('esconder-aluno');
     }
-
+    
     perfil_estudante.classList.add('mostrar-aluno');
 }
 

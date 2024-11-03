@@ -53,12 +53,14 @@ header{ /*Todo header é igual.*/
     align-items: center;
     height: 7vh;
     width: 100%;
+    min-height: fit-content;
 }
 
 table {
     width: 100%;
     height: 2vh;
     position: absolute;
+    min-height: fit-content;
 }
 
 #if-logo {
