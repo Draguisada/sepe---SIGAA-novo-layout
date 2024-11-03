@@ -14,7 +14,7 @@
 
     /* Set specific widths for each section */
     #content-left {
-        width: 25%; /* Occupies 25% of the screen */
+        width: 30%; /* Occupies 25% of the screen */
         min-width: 13rem;
         height: fit-content;
     }
@@ -393,7 +393,17 @@
     color: var(--cor-branco-padrao);
 }
 
+@media (max-width: 1460px) {
+    #content-left {
+        width: 34vw;
+    }
+}
 
+@media (max-width: 1280px) {
+    #content-left {
+        width: 33vw;
+    }
+}
 
 
 @media (max-width: 600px) {
