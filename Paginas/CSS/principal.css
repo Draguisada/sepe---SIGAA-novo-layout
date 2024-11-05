@@ -60,7 +60,7 @@ header {
     width: fit-content;
     padding: 1rem;
     border-radius:10px;
-    user-select: none;
+    /* user-select: none; */
 }   
 
 .dados-institucionais-aluno-imagem {
@@ -536,7 +536,7 @@ article > div {
 }
 
 .card-conteudo > p:first-child {
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.6);
     font-size: var(--normal-text);
 }
 
@@ -602,12 +602,22 @@ article > div {
         max-width: fit-content;
         margin-right: 3vh;
     }
-    .dados-institucionais-aluno-dados {
-        display: none;
+
+    .imagem-aluno:hover{
+        filter: none;
+        opacity: 1;
     }
+    
+    .imagem-aluno:hover + .editar-imagem {
+        display:none;
+        pointer-events: none;
+    }
+    /* .dados-institucionais-aluno-dados {
+        display: none;
+    } */
     #mobile-header {
         display: block;
-        height: 8rem;
+        height: 18rem;
         background-color: var(--cor-verde-header);
         margin-top: -2vh;
     }
@@ -653,12 +663,12 @@ article > div {
         right: auto;
         width: 100%;
         min-height: fit-content ;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     #perfil-estudante {
         flex-direction: row;
-        box-shadow: black 1px 1px 3px;
+        /* box-shadow: black 1px 1px 3px; */
     }
 
 
@@ -688,6 +698,7 @@ article > div {
     article > div{
         width: 16vw;
     }
+    
 
 }
 
@@ -700,7 +711,7 @@ article > div {
     }
     #side-menu {
         /* display: none; */
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
     #cog-mob {
         display: block;
@@ -716,9 +727,48 @@ article > div {
     }
 }
 
-@media (min-width: 381px) and (max-width: 400px) {
+@media (max-width: 450px) {
 
     #mobile-header {
-        height: 9.5rem;
+        height: 12rem;
     }
+}
+
+@media (max-width: 380px) {
+    #mobile-header {
+        height: 15rem;
+    }
+}
+@media (max-width: 350px) {
+    #mobile-header {
+        height: 17rem;
+    }
+}
+
+
+/* Eadge case */
+
+@media (min-width:361px) and (max-width: 400px) {
+    #perfil-estudante {
+        margin-right: 10%; 
+    }
+}
+
+
+/* Ajustes */
+
+.segmentos-perfil-estudante:first-of-type {
+    cursor: pointer;
+    border-bottom: dashed rgba(28, 28, 28, 0.4);
+}
+
+.horario {
+    position: absolute;
+    left: 1rem;
+    font-size: calc(var(--normal-text)/1.2);
+    text-decoration: underline;
+}
+
+.main-content-bar > p {
+    margin: 0;
 }

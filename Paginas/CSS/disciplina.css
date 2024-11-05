@@ -476,6 +476,14 @@
         display: flex;
         margin-bottom:5px;
         width: 100vw;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    #mob-only-change img {
+        width: 5vh;
+        
     }
     #content-mid {/* Occupies 50% of the screen */
         width: 100vw;

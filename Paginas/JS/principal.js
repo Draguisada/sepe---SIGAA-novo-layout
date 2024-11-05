@@ -34,6 +34,27 @@ function randomizeNotas(min = 5, rand = 4) {
     }
 }
 
+function sizeByScreenSize(mod = 0) {
+    let tamanho = window.innerWidth;
+    let resultado = 0;
+    if (tamanho <= 700) {
+        resultado = 18;  
+    } 
+    if (tamanho < 450){
+         resultado = 13;
+    } 
+    if (tamanho < 380) {
+        resultado = 15;
+    }
+    if (tamanho < 350) {
+        resultado = 17;
+    }
+
+    resultado += mod;
+    console.log(resultado);
+    return (resultado + 'rem');
+}
+
 randomizeNotas();
 colorizeNotas();
 
@@ -41,28 +62,42 @@ const mobileHeader = document.getElementById('mobile-header');
 const perfil_estudante = document.getElementById('perfil-estudante');
 let aberto = 0;
 let quaseTudo = document.querySelectorAll('#main-content > div');
+const dados_aluno = document.getElementsByClassName('dados-institucionais-aluno-dados');
 
 function mostrarPerfilAluno() {
-    const esconder = document.getElementsByClassName('esconder-aluno');
-    const mostrar = document.getElementsByClassName('mostrar-aluno');
+    let esconder = document.getElementsByClassName('esconder-aluno');
+    let mostrar = document.getElementsByClassName('mostrar-aluno');
+
+    if (window.innerWidth <= 700) {
+        if (!aberto) {
+            dados_aluno[0].style.display = "none";
+            mobileHeader.style.height = sizeByScreenSize();
+        } else {
+            dados_aluno[0].style.display= "block";
+            mobileHeader.style.height = sizeByScreenSize();
+        }
+        
+    }
 
     if (perfil_estudante.classList.contains('mostrar-aluno')) {
-        mobileHeader.style.height = '8rem';
+
         for (i = 0; i < quaseTudo.length; i++) {
             quaseTudo[i].style.opacity = '1';
         }
         aberto = 0;
-        for (i=0; i<=mostrar.length; i++){
+        for (i=0; i<mostrar.length; i++){
             mostrar[0].classList.remove('mostrar-aluno');
             mostrar[0].classList.add('esconder-aluno');
         }
-        mostrar[0].classList.remove('mostrar-aluno');
+        
         mostrar[0].classList.add('esconder-aluno');
+        mostrar[0].classList.remove('mostrar-aluno');
         
         
         return 0;
     }
-    mobileHeader.style.height = '30vh';
+    // mobileHeader.style.height = '';
+
     if (window.innerWidth <= 510) {
         
         if (!aberto) {
@@ -71,14 +106,21 @@ function mostrarPerfilAluno() {
             }
             aberto = 1;
             mobileHeader.style.height = '100vh';
+
+        } else {
+            aberto = 0;
         }
+        
+        
     }
+    
     for (i=0; i<=esconder.length; i++){
         esconder[0].classList.add('mostrar-aluno');
         esconder[0].classList.remove('esconder-aluno');
-    }
+    }    
     
     perfil_estudante.classList.add('mostrar-aluno');
+    aberto = 1;
 }
 
 
