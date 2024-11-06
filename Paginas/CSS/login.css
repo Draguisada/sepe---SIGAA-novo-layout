@@ -112,7 +112,7 @@ section {
 
 #container {
     position: relative;
-    height:40vh;
+    height:fit-content;
     width: 30vw;
     min-width: 300px;
     background-color: var(--cor-verde-acizentado);
@@ -257,3 +257,4 @@ header, nav {
         position: relative;
     }
 }
+
